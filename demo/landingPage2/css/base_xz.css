@@ -1,0 +1,134 @@
+﻿@charset "UTF-8";
+/**
+ * 
+ * @authors   
+ * @date      2016-11
+ * @location  
+ */
+ html, body, div, span, input, object, iframe,h1, h2, h3, h4, h5, h6, p, pre,abbr, address, code,del,em, img,samp,small, strong, sub, sup,b, i,dl, dt, dd, ol, ul, li,fieldset, form, label,table, tbody, tfoot, thead, tr, th, td,article, aside, canvas,footer, header, nav, section, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    
+    
+}
+body {max-width:640px;min-width:300px;margin:0 auto;overflow-x:hidden; }
+article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary {
+    display:block;
+}
+li {list-style:none;}
+a {
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    text-decoration:none;
+}
+a{-webkit-tap-highlight-color:rgba(0,0,0,0);} /*取消a链接的黄色边框*/
+i,em{font-style:normal}
+table {border-collapse:collapse;border-spacing:0;}
+input,button,select,textarea,input:focus,button:focus,select:focus,textarea:focus{ outline:none;vertical-align:middle;}
+textarea{ font-size:13px; resize:none;}
+a:hover { text-decoration:none;}
+a:focus { outline:none; -moz-outline:none; }
+img, :link img, :visited img {border:none;}
+:focus{outline:0;}
+button{cursor:pointer;}
+.hand{cursor:pointer;}
+/*清除浮动*/
+.clearfix:after { 
+    content:"\200B"; 
+    display:block; 
+    height:0; 
+    clear:both; 
+} 
+.clearfix {*zoom:1;}/*IE/7/6*/
+
+.fl{ float:left !important; display:inline}
+.fr{ float:right !important; display:inline;}
+.pta{position:absolute;}
+.ptr{position:relative;}
+
+.tl{ text-align:left !important;}
+.tr{ text-align:right !important;;}
+.tc{ text-align:center !important;;} 
+
+
+.colul li{display:inline-block;}
+.tdunderline{text-decoration:underline;}
+.tabicon{position:absolute;right:-13px;top:-6px;}
+
+/***************  定位部分  ******************/
+.visihide{visibility:hidden;}
+.dishide{display:none;}
+.disib{display:inline-block;}
+
+/***************  距离部分******************/
+.mt5{margin-top:5px;}.mt10{margin-top:10px;}.mt15{margin-top:15px;}.mt20{margin-top:20px;}.mt30{margin-top:30px;}.mt40{margin-top:40px;}.mt50{margin-top:50px;}.mt60{margin-top:60px;}
+.ml5{margin-left:5px;}.ml10{margin-left:10px;}.ml15{margin-left:15px;}.ml20{margin-left:20px;}.ml30{margin-left:30px;}.ml40{margin-left:40px;}.ml50{margin-left:50px;}.ml60{margin-left:60px;}
+.mb5{margin-bottom:5px;}.mb10{margin-bottom:10px;}
+
+/***************  字体大小部分******************/
+.fs12{font-size:12px;}.fs13{font-size:13px;}.fs14{font-size:14px;}.fs15{font-size:15px;}.fs16{font-size:16px;}.fs17{font-size:17px;}.fs18{font-size:18px;}.fs19{font-size:19px;}.fs20{font-size:20px;}.fs21{font-size:21px;}.fs22{font-size:22px;}.fs23{font-size:23px;}.fs24{font-size:24px;}.fs25{font-size:25px;}.fs26{font-size:26px;}.fs27{font-size:27px;}.fs28{font-size:28px;}.fs29{font-size:29px;}.fs30{font-size:30px;}
+.fw600{font-weight: 600;}
+
+/*************** 字体颜色部分******************/
+.ctheme1{color:#8a7371 !important;}.ctheme2{color:#67301e !important;}.cdanger{color:#dd0000 !important;}
+
+/*************** 字体间距部分******************/
+.textindent2{text-indent:2em;}
+
+/*************** 边框线颜色部分******************/
+.bcdanger{border:1px solid #e74f4f !important;}
+
+/*************** 重新定义a标签部分******************/
+.linka{border:0;font-size:100%;font-weight: 400;color:#6699b5;vertical-align:baseline;background:transparent;text-decoration: underline;cursor: pointer;}
+.linka:hover {text-decoration:underline;}
+.linka:focus {outline:none; -moz-outline:none; }
+
+
+/**********导入字体包*********/
+
+.col-12 {
+  width: 100%;
+}
+.col-11 {
+  width: 91.666%;
+}
+.col-10 {
+  width: 83.333%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-8 {
+  width: 66.666%;
+}
+.col-7 {
+  width: 58.333%;
+}
+.col-66 {
+  width: 49%;
+}
+.col-6 {
+  width: 49%;
+  margin-right:1%;
+}
+.col-5 {
+  width: 41.666%;
+}
+.col-4 {
+  width: 33.333%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-2 {
+  width: 16.666%;
+}
+.col-1 {
+  width: 8.333%;
+}

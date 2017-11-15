@@ -1,0 +1,17 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+/*弹出框样式*/
+.Tc{display:none;width:100%;height:100%; background:url(../images/tcbg.png); position:fixed; top :0; z-index:99999;left:0;}
+*{ text-decoration: none;}
+        .wrapAll{ width: 100%; height: 300px; }
+        .mail_wrap{ position:fixed; top:50%; left:50%;width:558px; height: 348px; margin-top:-174px; margin-left:-279px;background:url(../images/tck.gif) no-repeat center;z-index: 10;}
+        .mail_wrap em{  width: 28px; height: 31px; position: absolute; top:10px; right:13px; cursor: pointer;}
+ .mail_wrap p {
+    width: 420px;
+    height: 49px;
+    position: absolute;
+    bottom: 45px;
+    left: 80px;
+}
+/*end*/

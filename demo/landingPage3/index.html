@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content='尚德机构,北京分校,尚德机构:中国领先的互联网教育公司。提供全国精品直播课程、录播课程、面授课程等，业务涵盖职业资格认证、上班族的学历教育、人力资源管理、会计体系培训课程、建造类等课程，致力于提供快乐、轻松、有价值的课程体验' />
+    <meta name="keywords" content='尚德机构,北京分校,尚德机构:中国领先的互联网教育公司。提供全国精品直播课程、录播课程、面授课程等，业务涵盖职业资格认证、上班族的学历教育、人力资源管理、会计体系培训课程、建造类等课程，致力于提供快乐、轻松、有价值的课程体验' />
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<meta name="wap-font-scale" content="no">  <!-- uc浏览器变形 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="telephone=no" name="format-detection">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<title>据说你缺一台IPhoneX</title>
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+	<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+	<script src="./js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="http://lp.sunlands.com/js/portalJs/message.js"></script>
+	<script>
+	$(function(){
+		var url=this.location.href;
+		$("form #field3").each(function(n){
+		$("form #field3").get(n).value=url;
+		})
+	})
+	</script>
+</head>
+<body>
+	<img src="./images/1_01.png"/>
+	<div class="part1">
+		<div class="man">
+			<img src="./images/1_03.png"/>
+		</div>
+	</div>
+	<div class="part2">
+		<div class="p2-1-1">
+			<img src="./images/fang.png"/>
+		</div>
+		<div class="p2-1-2">
+			<img src="./images/ren.png"/>
+		</div>
+		<div class="p2-2">
+			<img src="./images/1_04.png"/>
+		</div>
+		<form name="messageForm" method="post" action="/message.action" id="messageForm1">
+            <input type="hidden" name="msg.remark" class="enterinput" id="remark" value="杨峥" />
+            <input type="hidden" value="北京分校" name="msg.school_code" id="schoolCode" />
+            <input type="hidden" value="北京自考" name="msg.project_code" />
+            <input type="hidden" value="杨峥" name="msg.message_type"/>
+            <input type="hidden" name="msg.email" placeholder="邮箱"/>
+            <input type="hidden" name="msg.name" placeholder="姓名" id="name"/>
+            <input type="hidden" name="msg.field3" id="field3" value=""/>
+            <input type="hidden" value="http://i.sunlands.com/portal-war/message.action" id="msgUrl" />
+            <input type="tel" name="msg.phone" placeholder="输入手机号" id="tel1"/>
+            <input type="button" name="name" value="我要抢占代金券" id="sub1" onclick="tuiguang_message_open('messageForm1',callback,1,35)"/>
+        </form>
+        <div id="demo" style="overflow:hidden;height:120px;">
+		    <ul id="demo1">
+		    	<li>用户135****6781领到了<span>2000元</span></li>
+		     	<li>用户182****7686领到了<span>2000元</span></li>
+		     	<li>用户186****1258领到了<span>1000元</span></li>
+		     	<li>用户135****6980领到了<span>1500元</span></li>
+		     	<li>用户133****6689领到了<span>2000元</span></li>
+		     	<li>用户137****6683领到了<span>1000元</span></li>
+		     	<li>用户133****9829领到了<span>2000元</span></li>
+		     	<li>用户131****6631领到了<span>1500元</span></li>
+		     	<li>用户176****8891领到了<span>1500元</span></li>
+		    </ul>
+		    <ul id="demo2"></ul>
+		</div>
+	</div>
+	<img src="./images/1_07.jpg"/>
+	<div class="fix1">
+		<div class="fix1-m">
+			<a class="fix1-btn" href="http://6du.in/1uxXcs"></a>
+			<div class="fix1-close"></div>
+		</div>
+	</div>
+	<div class="fix2">
+		<div class="fix2-m">
+			<a class="fix2-btn" href="http://6du.in/1uxXcs"></a>
+			<div class="fix2-close"></div>
+		</div>
+	</div>
+	<script>
+		$(function () {
+			demoScoll();
+		})
+		function demoScoll() {
+			var speed = 30
+			demo2.innerHTML = demo1.innerHTML//克隆demo1为demo2
+			function Marquee() {
+			if (demo2.offsetHeight - demo.scrollTop <= 0)//当滚动至demo1与demo2交界时
+			demo.scrollTop -= demo1.offsetHeight//demo跳到最顶端
+			else {
+			demo.scrollTop++//如果是横向的 将 所有的 height top 改成 width left
+			}
+			}
+			var MyMar = setInterval(Marquee, speed)//设置定时器
+			//demo.onmouseover = function() { clearInterval(MyMar) } //鼠标移上时清除定时器达到滚动停止的目的
+			//demo.onmouseout = function() { MyMar = setInterval(Marquee, speed) } //鼠标移开时重设定时器
+		}
+		$(".fix1-close").click(function(){
+			$(".fix1").fadeOut();
+		})
+		$(".fix1-btn").click(function(){
+			$(".fix1").fadeOut();
+		})
+		$(".fix2-close").click(function(){
+			$(".fix2").fadeOut();
+		})
+		$(".fix2-btn").click(function(){
+			$(".fix2").fadeOut();
+		})
+		function callback(msg) {
+			var time = new Date().getHours();
+			if(time >23){
+				$(".fix2").fadeIn();
+			}else{
+				$(".fix1").fadeIn();
+			}
+	        //alert("恭喜您!已成功报名");
+	        $("#tel1").val("");
+	        // window.location ="index2.html";
+	        //追加短信,可以删除掉,如果要追加留言必须带上参数:&callback="+回调函数如:testBack可以为别的随便名称,但必须跟下面的名称一样
+	        $.ajax({
+	            url: encodeURI(encodeURI("http://w.sunlands.com/tuiguang/ajax_tuiguang_message.htm?tel=" + msg.phone + "&name=" + msg.name
+	            + "&messageId=" + msg.messageId + "&schoolId=" + msg.schoolId + "&callback=" + testBack)),
+	            type: "get",
+	            dataType: "jsonp",
+	            jsonp: testBack,//回调函名称必须有,和参数&callback="的值一样的
+	            success: function (data) { }
+	        });
+	    }
+	    //和追加留言一起的回调函数,和参数&callback="的值一样的
+	    function testBack(msg) {
+	        //可以为空
+	    }
+		NTKF_PARAM = {
+	        siteid: "kf_9740",                            //公司ID   固定,
+	        settingid: "kf_9740_60320075",             //子站点id
+	        erpparam: "settingid:kf_9740_60320075"
+	    }
+	</script>
+	<script type="text/javascript" src="http://dl.ntalker.com/js/xn6/ntkfstat.js?siteid=kf_9740" charset="utf-8"></script>
+</body>
+</html>

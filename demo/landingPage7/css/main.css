@@ -1,0 +1,429 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+body {
+  position: relative;
+}
+.preLoad {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: #eee;
+}
+.preLoad #jindu {
+  font-size: 0.36rem;
+  text-align: center;
+  color: black;
+  margin-top: 1.5rem;
+}
+.preLoad .loading {
+  width: 123px;
+  height: 40px;
+  margin: 50% auto 0;
+}
+.preLoad .loading span {
+  display: inline-block;
+  width: 8px;
+  height: 100%;
+  border-radius: 4px;
+  background: lightgreen;
+  -webkit-animation: load 1s ease infinite;
+}
+@-webkit-keyframes load {
+  0%,
+  100% {
+    height: 40px;
+    background: lightgreen;
+  }
+  50% {
+    height: 70px;
+    margin: -15px 0;
+    background: lightblue;
+  }
+}
+.preLoad .loading span:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+}
+.preLoad .loading span:nth-child(3) {
+  -webkit-animation-delay: 0.4s;
+}
+.preLoad .loading span:nth-child(4) {
+  -webkit-animation-delay: 0.6s;
+}
+.preLoad .loading span:nth-child(5) {
+  -webkit-animation-delay: 0.8s;
+}
+header {
+  overflow: hidden;
+  width: 100%;
+  font-size: 0.23rem;
+  background-color: #ddd8b7;
+  padding: 1% 0;
+}
+header p {
+  margin: 0;
+}
+header .leftBox {
+  height: 100%;
+  float: left;
+  width: 50%;
+}
+header .leftBox img {
+  height: 0.6rem;
+  float: left;
+  margin: 2% 0 2% 0.4rem;
+  border-radius: 0.1rem;
+}
+header .leftBox .left_word {
+  float: left;
+  margin-top: 2%;
+  margin-left: 0.1rem;
+}
+header .rightBox .btnBox {
+  border: 1px solid #5c7a5d;
+  width: 2.3rem;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  display: block;
+  border-radius: 0.3rem;
+  text-align: center;
+  float: right;
+  margin-right: 0.14rem;
+  margin-top: 2%;
+  color: #5c7a5d;
+}
+.rotateBox {
+  position: fixed;
+  bottom: 0.2rem;
+  z-index: 5;
+  font-size: 0.24rem;
+  background-color: rgba(144, 160, 130, 0.8);
+  padding: 0.3rem 0.4rem;
+  border-radius: 50%;
+  right: 35%;
+}
+.rotateBox p {
+  margin: 0;
+  text-align: center;
+}
+.rotateBox p span {
+  color: #ffcc00;
+}
+.small {
+  -webkit-animation: moveLeft 1s;
+          animation: moveLeft 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.mainBody {
+  height: 93%;
+  padding-bottom: 14%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.mainBody .swiper-container {
+  height: 100%;
+}
+.mainBody .swiper-container .swiper-pagination {
+  top: -0.55rem;
+  left: 0.4rem;
+  text-align: left;
+}
+.mainBody .content1 {
+  background: url("../img/swipe1_back.jpg") no-repeat top center;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.mainBody .content1 h2 {
+  font-size: 0.5rem;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 0;
+}
+.mainBody .content1 h2 span {
+  font-size: 0.97rem;
+  color: #ffd200;
+}
+.mainBody .content1 p {
+  font-size: 0.28rem;
+  text-align: center;
+}
+.mainBody .content2 {
+  background: url("../img/swipe2_back.jpg") no-repeat top center;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  padding-top: 0.5rem;
+}
+.mainBody .content2 img {
+  width: 3.6rem;
+  margin: 0 auto;
+}
+.mainBody .content3 {
+  background: url("../img/swipe3_back.jpg") no-repeat top center;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  padding-top: 0.7rem;
+}
+.mainBody .content3 img {
+  width: 3.3rem;
+  margin-left: 0.34rem;
+}
+.mainBody .connection1 {
+  padding: 1.1rem 0 0.9rem;
+  background: url("../img/connection1.jpg") no-repeat top center;
+  background-size: cover;
+}
+.mainBody .connection1 h3 {
+  font-size: 0.64rem;
+  margin: 0;
+  font-weight: normal;
+  text-align: center;
+  color: #fff;
+}
+.mainBody .fourPic {
+  padding: 0.1rem 0.1rem 0.6rem;
+  overflow: hidden;
+}
+.mainBody .fourPic .singleBox {
+  width: 50%;
+  float: left;
+}
+.mainBody .fourPic .pic1 {
+  background: url("../img/pics.png") no-repeat 0 0;
+}
+.mainBody .fourPic .pic2 {
+  background: url("../img/pics.png") no-repeat 0 -2rem;
+}
+.mainBody .fourPic .pic3 {
+  background: url("../img/pics.png") no-repeat 0 -4rem;
+}
+.mainBody .fourPic .pic4 {
+  background: url("../img/pics.png") no-repeat 0 -6rem;
+}
+.mainBody .fourPic .imgBack {
+  width: 3rem;
+  height: 2rem;
+  background-size: 100%;
+  border-radius: 0.1rem;
+}
+.mainBody .fourPic p {
+  font-size: 0.17rem;
+  text-align: center;
+  margin: 0.1rem 0;
+}
+.mainBody .fourPic_wish {
+  padding: 0.5rem 0 0;
+  background: url("../img/fourPic_back.jpg") no-repeat top center;
+  background-size: cover;
+}
+.mainBody .fourPic_wish .title {
+  color: #fff;
+  text-align: center;
+}
+.mainBody .fourPic_wish .title h3 {
+  font-size: 0.42rem;
+  font-weight: normal;
+  margin: 0 0 0.3rem;
+}
+.mainBody .fourPic_wish .title p {
+  font-size: 0.28rem;
+  margin: 0;
+}
+.mainBody .fourPic_wish .Pic_wish {
+  padding: 0.1rem 0.1rem 0.6rem;
+  overflow: hidden;
+}
+.mainBody .fourPic_wish .Pic_wish .singleBox {
+  width: 50%;
+  float: left;
+  margin-top: 0.1rem;
+}
+.mainBody .fourPic_wish .Pic_wish .singleBox .pic1 {
+  background: url("../img/pics.png") no-repeat 0 -8rem;
+}
+.mainBody .fourPic_wish .Pic_wish .singleBox .pic2 {
+  background: url("../img/pics.png") no-repeat 0 -10rem;
+}
+.mainBody .fourPic_wish .Pic_wish .singleBox .pic3 {
+  background: url("../img/pics.png") no-repeat 0 -12rem;
+}
+.mainBody .fourPic_wish .Pic_wish .singleBox .pic4 {
+  background: url("../img/pics.png") no-repeat 0 -14rem;
+}
+.mainBody .fourPic_wish .Pic_wish .singleBox .imgBack {
+  width: 3rem;
+  height: 1.8rem;
+  background-size: 100%;
+  border-radius: 0.1rem;
+  margin-bottom: 0.1rem;
+}
+.mainBody .fourPic_wish .Pic_wish .singleBox p {
+  text-align: center;
+  font-size: 0.17rem;
+  color: #fff;
+  margin: 0;
+}
+.mainBody .studentReply {
+  padding-bottom: 0.7rem;
+}
+.mainBody .studentReply h3 {
+  font-size: 0.42rem;
+  text-align: center;
+  font-weight: normal;
+}
+.mainBody .studentReply img {
+  width: 100%;
+}
+.mainBody .schoolArea {
+  background: url("../img/school_back.jpg") no-repeat top center;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem 0 0.3rem;
+}
+.mainBody .schoolArea h3 {
+  font-size: 0.42rem;
+  margin: 0;
+}
+.mainBody .schoolArea p {
+  font-size: 0.28rem;
+}
+.mainBody .schoolArea #school {
+  width: 98%;
+  margin: 0 auto;
+}
+.mainBody .schoolArea #schoolAdd {
+  width: 98%;
+  margin: 0.32rem auto 0;
+}
+.mainBody .promise {
+  padding: 0.5rem 0;
+}
+.mainBody .promise img {
+  width: 3.87rem;
+  margin: 0 auto;
+}
+.mainBody .company {
+  background: url("../img/company_back.jpg") no-repeat top center;
+  background-size: cover;
+  padding: 0.6rem 0;
+  color: #fff;
+  text-align: center;
+}
+.mainBody .company h3 {
+  font-size: 0.42rem;
+  margin: 0;
+  font-weight: normal;
+  margin-bottom: 0.4rem;
+}
+.mainBody .company img {
+  width: 90%;
+  margin: 0 auto;
+}
+.alertBox {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+.alertBox .title {
+  font-size: 0.34rem;
+  text-align: center;
+  color: #f96e45;
+  position: relative;
+}
+.alertBox .title .close {
+  position: absolute;
+  left: 0.3rem;
+  margin-left: 0.3rem;
+}
+.alertBox .title .close img {
+  height: 0.3rem;
+}
+.alertBox .content {
+  font-size: 0.24rem;
+  padding: 0.5rem;
+}
+.alertBox .content p {
+  text-align: center;
+  border-bottom: 1px solid #dfdfdf;
+  line-height: 0.7rem;
+}
+.alertBox .content p input {
+  border: none;
+  text-align: center;
+  line-height: 0.28rem;
+  font-size: 0.26rem;
+}
+.alertBox .content p a#getVinCode {
+  color: #c2c2c2;
+  padding: 0.1rem;
+  border: 1px solid #c2c2c2;
+  border-radius: 0.5rem;
+}
+.alertBox .content p a#but1 {
+  color: #fff;
+  background-color: #f85415;
+  padding: 0.1rem;
+  border-radius: 0.5rem;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+}
+footer p {
+  font-size: 0.24rem;
+  text-align: center;
+  line-height: 0.8rem;
+  height: 0.8rem;
+  margin: 0.0rem;
+}
+footer p span {
+  font-size: 0.32rem;
+  color: #ff3030;
+}
+footer p a {
+  padding: 0.1rem 0.5rem;
+  background-color: #ff3d4c;
+  color: #fff;
+  margin-left: 0.2rem;
+  border-radius: 0.1rem;
+}
+.smallIcon {
+  display: none;
+}
+@-webkit-keyframes moveLeft {
+  100% {
+    right: 0.1rem;
+    padding: 0.1rem 0.2rem;
+    bottom: 0.8rem;
+  }
+}
+@keyframes moveLeft {
+  100% {
+    right: 0.1rem;
+    padding: 0.1rem 0.2rem;
+    bottom: 0.8rem;
+  }
+}

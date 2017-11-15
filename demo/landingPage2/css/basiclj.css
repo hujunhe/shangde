@@ -1,0 +1,381 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+.cl{
+    clear:both;
+}
+body {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 640px;
+    font-family: "Microsoft YaHei",Arial;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    padding-top: 2%;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 410px) {
+    h3 {
+        font-size: 19px;
+    }
+}
+
+h3 span {
+    color: #f44336;
+}
+
+.page {
+    width: 100%;
+    margin: 0 auto;
+}
+
+    .page ul {
+        width: 86%;
+        margin: 0 auto;
+        overflow: hidden;
+        margin-top: 4%;
+    }
+
+.page1 ul li {
+    width: 46%;
+    height: 32px;
+    margin-right: 8%;
+    float: left;
+    text-align: center;
+    color: #fff;
+    background: #f44336;
+    margin-bottom: 2%;
+    line-height: 32px;
+    box-shadow: 1px 1px 3px #661c17;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+    .page1 ul li:nth-child(2n) {
+        margin-right: 0;
+    }
+
+a.but {
+    width: 86%;
+    height: 36px;
+    display: block;
+    margin: 0 auto;
+    background: #000;
+    box-shadow: 1px 1px 3px #555555;
+    box-sizing: border-box;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 36px;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+@media screen and (max-width: 376px) {
+    .page2 ul {
+        width: 94%;
+    }
+}
+.page2 ul li {
+    width: 28%;
+    float: left;
+    margin-right: 5%;
+    text-align: center;
+    background: #a0a0a0;
+    border-radius: 3px;
+    padding: 2% 1%;
+    margin-bottom: 3%;
+    color: #fff;
+}
+
+    .page2 ul li.black {
+        background: #000;
+    }
+
+    .page2 ul li.green {
+        background: #e7e9db;
+        color: #000;
+    }
+
+    .page2 ul li:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    .page2 ul li p {
+        font-size: 18px;
+        padding: 1% 0;
+    }
+
+    .page2 ul li span {
+        display: block;
+        text-align: center;
+        font-size: 14px;
+        padding: 2% 0;
+    }
+
+    .page2 ul li a {
+        text-decoration: underline;
+        padding: 2% 0;
+    }
+
+    .page2 ul li.green a {
+        color: #000;
+    }
+
+.page2 a.but, .page3 a.but {
+    background: #f44336;
+    box-shadow: 1px 1px 3px #3d110e;
+}
+
+.page > p {
+    text-align: center;
+    padding-top: 2%;
+}
+.page > p>span{
+    color:red;
+}
+.page3 ul li {
+    width: 30%;
+    height: 34px;
+    float: left;
+    margin-right: 5%;
+    margin-bottom: 3%;
+    background: #e7e9db;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 34px;
+}
+
+    .page3 ul li:nth-child(3n) {
+        margin-right: 0%;
+    }
+
+    .page3 ul li.black {
+        background: #000;
+        color: #fff;
+    }
+
+@media screen and (max-width: 374px) {
+    .page4 ul {
+        width: 96%;
+    }
+}
+
+.page4 ul li {
+    width: 100%;
+}
+
+    .page4 ul li p {
+        float: left;
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+        margin-bottom: 2%;
+    }
+
+    .page4 ul li.red p {
+        color: red;
+    }
+
+    .page4 ul li a {
+        float: right;
+        width: 28%;
+        height: 30px;
+        background: #e60012;
+        box-shadow: 1px 1px 3px #3a0d11;
+        box-sizing: border-box;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 3px;
+        font-size: 14px;
+        margin-bottom: 2%;
+    }
+
+.page4 a.but {
+    background: #373737;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.page5 ul li {
+    width: 28%;
+    float: left;
+    margin-right: 5%;
+    text-align: center;
+    background: #e7e9db;
+    border-radius: 3px;
+    padding: 2% 1%;
+    margin-bottom: 3%;
+    color: #000;
+}
+
+    .page5 ul li.black {
+        background: #201b17;
+        color: #fff;
+    }
+
+    .page5 ul li:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    .page5 ul li p {
+        font-size: 16px;
+        padding: 1% 0;
+    }
+
+        .page5 ul li p:nth-child(1) {
+            font-size: 14px;
+            padding-bottom: 5%;
+            border-bottom: 1px solid #000;
+        }
+
+    .page5 ul li.black p:nth-child(1) {
+        border-bottom: 1px solid #fff;
+    }
+
+.page5 a.but, .page5 a.but {
+    background: #f44336;
+    box-shadow: 1px 1px 3px #3d110e;
+}
+
+.page6 ul li {
+    width: 100%;
+    float: left;
+    text-align: center;
+    border-radius: 3px;
+    margin-bottom: 5%;
+    color: #000;
+}
+
+    .page6 ul li.black {
+        color: #fff;
+    }
+
+    .page6 ul li p {
+        width: 96%;
+        padding: 2% 2%;
+        background: #201b17;
+        color: #fff;
+        border-radius: 3px;
+        font-size: 16px;
+        box-shadow: 1px 1px 3px #3d110e;
+    }
+
+    .page6 ul li a {
+        width: 100%;
+        display: block;
+        height:32px;
+        line-height:32px;
+        background: #201b17;
+        color: #fff;
+        margin-top: 2%;
+        border-radius: 3px;
+        box-shadow: 1px 1px 3px #3d110e;
+    }
+
+    .page6 ul li:nth-child(3n) {
+        margin-right: 0;
+    }
+
+.page6 a.but, .page6 a.but {
+    background: #f44336;
+    box-shadow: 1px 1px 3px #3d110e;
+}
+
+.page6 .green p {
+    background: #e7e9db;
+    color: #000;
+}
+
+.page6 .green a {
+    background: #e7e9db;
+    color: #000;
+}
+
+.page6 .blue p {
+    background: #00a0e9;
+}
+
+.page6 .blue a {
+    background: #00a0e9;
+}
+.page7 div{
+ width:94%;
+ margin:0 auto;
+ position:relative;
+ margin-top:5%;
+}
+.page7 div img{
+   position:absolute;
+   top:3%;
+   right:1%;
+   width:43%;
+}
+.page7 div span{
+    font-size:12px;
+}
+.page7 div p{
+    width:50%;
+    text-align:center;
+}
+.page7 div p s{
+    color:red;
+    text-decoration:none;
+}
+.page7 div span{
+    display:block;
+    width:52%;
+    text-align:center;
+}
+.page7 a.but{
+    width:70%;
+    margin-top:10%;
+    background: #f44336;
+    box-shadow: 1px 1px 3px #3d110e;
+}
+.page7 .no2 img{
+    position:absolute;
+   left:1%;
+}
+.page7 .no2 p{
+    margin-left:45%;
+}
+.page7 .no2 span{
+    margin-left:45%;
+}
+.page9 a.but{
+    background: #f44336;
+    box-shadow: 1px 1px 3px #3d110e;
+}
+.pageimg{background:#474553; padding:20px 0;}
+.pageimg img{width:70%; margin-left:15%; margin-right:15%; margin-top:10px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

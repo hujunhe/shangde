@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, minimum-scale=0.5,maximum-scale=1, user-scalable=0, target-densitydpi=device-dpi">
+    <title>尚德机构学历测评系统</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <script src="js/jquery.min.js" charset="utf-8"></script>
+    <script src="js/jquery.touchSwipe.min.js" charset="utf-8"></script>
+    <script src="js/swiper.min.js" charset="utf-8"></script>
+    <script src="js/rem.js" charset="utf-8"></script>
+    <script src="js/main.js" charset="utf-8"></script>
+    <script src="js/index.js" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(function () {
+            var url = this.location.href;
+            $("form #field3").each(function (n) {
+                $("form #field3").get(n).value = url;
+            })
+        })
+    </script>
+</head>
+<body>
+<div class="page2 page">
+    <a href="javascript:;" class="nextBtn" id="submits"><img src="images/f_btn.png" alt=""/></a>
+</div>
+<div class="page3 page">
+    <div id="que" class="clear">
+        <div class="tit">
+            <p class="tit-one">免费测一测适合你的院校专业</p>
+
+            <p class="tit-two">十余所上海名校开放成人本科招生报名通道</p>
+        </div>
+        <div class="question">
+            <p>1.你目前的学历层次</p>
+            <span class="que-opt"><input type="radio" name="radio1" value="aa"/>小学及以下</span>
+            <span class="que-opt"><input type="radio" name="radio1" value="aa"/>初中</span>
+            <span class="que-opt"><input type="radio" name="radio1" value="aa"/>中专</span><br/>
+            <span class="que-opt"><input type="radio" name="radio1" value="gz"/>高中</span>
+            <span class="que-opt"><input type="radio" name="radio1" value="dz"/>大专</span>
+            <span class="que-opt"><input type="radio" name="radio1" value="bk"/>本科</span>
+        </div>
+        <div class="question">
+            <p>2.你能接受的考证时长</p>
+            <span class="que-opt"><input type="radio" name="radio2" value="bb"/>6个月-1年</span>
+            <span class="que-opt"><input type="radio" name="radio2" value="bb"/>1年-2年</span>
+            <span class="que-opt"><input type="radio" name="radio2" value="es"/>2年-3年</span><br/>
+            <span class="que-opt"><input type="radio" name="radio2" value="ss"/>3年及以上</span>
+        </div>
+        <div class="question">
+            <p>3.你的年龄段</p>
+            <span class="que-opt"><input type="radio" name="radio3" value="ee"/>18-23岁</span>
+            <span class="que-opt"><input type="radio" name="radio3" value="es"/>23-30岁</span>
+            <span class="que-opt"><input type="radio" name="radio3" value="ssw"/>30-35岁</span><br/>
+            <span class="que-opt"><input type="radio" name="radio3" value="sw"/>35-40岁</span>
+            <span class="que-opt"><input type="radio" name="radio3" value="ee"/>40岁以上</span>
+        </div>
+        <div class="question">
+            <p>4.你为什么考本科？</p>
+            <span class="que-opt"><input type="radio" name="radio4" value="cc"/>找工作</span>
+            <span class="que-opt"><input type="radio" name="radio4" value="gwy"/>考公务员</span>
+            <span class="que-opt"><input type="radio" name="radio4" value="jf"/>居住证积分</span><br/>
+            <span class="que-opt"><input type="radio" name="radio4" value="pzc"/>评职称</span>
+            <span class="que-opt"><input type="radio" name="radio4" value="cc"/>自我提升</span>
+            <span class="que-opt"><input type="radio" name="radio4" value="qt"/>其他</span>
+        </div>
+        <div class="question">
+            <p>5.你更偏向于哪种取证方式?</p>
+            <span class="que-opt"><input type="radio" name="radio5" value="class"/>在家上课</span>
+            <span class="que-opt"><input type="radio" name="radio5" value="xbyx"/>下班夜校</span>
+            <span class="que-opt"><input type="radio" name="radio5" value="zmxx"/>周末学习</span><br/>
+        </div>
+        <!--模态框-->
+        <div id="modal_overlay">
+        <div class="modala modal">
+            <div class="close"><img src="images/close.jpg" class="closemodal"/></div>
+            <div class="leixing"><img src="images/A.jpg" alt=""/></div>
+            <div class="loadapp lastbox"><a
+                    href="http://mobile.sunland.org.cn/activity/mlink/getExtentionPage?channel=tengxunzhihuitui&scene=xiangmuye&configUser=mengxiangyue&siteId=603220697&pageDetail=homepage&reserveParam1=19juntuan&reserveParam2=moqiuli&reserveParam3=qita">
+                <img src="images/tc_btn.jpg" alt=""/>
+            </a></div>
+        </div>
+        <div class="modalb modal">
+            <div class="close"><img src="images/close.jpg" class="closemodal"/></div>
+            <div class="leixing"><img src="images/B.jpg" alt=""/></div>
+            <div class="loadapp lastbox"><a
+                    href="http://mobile.sunland.org.cn/activity/mlink/getExtentionPage?channel=tengxunzhihuitui&scene=xiangmuye&configUser=mengxiangyue&siteId=603220697&pageDetail=homepage&reserveParam1=19juntuan&reserveParam2=moqiuli&reserveParam3=qita">
+                <img src="images/tc_btn.jpg" alt=""/>
+            </a></div>
+        </div>
+        <div class="modalc modal">
+            <div class="close"><img src="images/close.jpg" class="closemodal"/></div>
+            <div class="leixing"><img src="images/C.jpg" alt=""/></div>
+            <div class="loadapp lastbox"><a
+                    href="http://mobile.sunland.org.cn/activity/mlink/getExtentionPage?channel=tengxunzhihuitui&scene=xiangmuye&configUser=mengxiangyue&siteId=603220697&pageDetail=homepage&reserveParam1=19juntuan&reserveParam2=moqiuli&reserveParam3=qita">
+                <img src="images/tc_btn.jpg" alt=""/>
+            </a></div>
+        </div>
+        <div class="modald modal">
+            <div class="close"><img src="images/close.jpg" class="closemodal"/></div>
+            <div class="leixing"><img src="images/DD.jpg" alt=""/></div>
+            <div class="loadapp lastbox"><a
+                    href="http://mobile.sunland.org.cn/activity/mlink/getExtentionPage?channel=tengxunzhihuitui&scene=xiangmuye&configUser=mengxiangyue&siteId=603220697&pageDetail=homepage&reserveParam1=19juntuan&reserveParam2=moqiuli&reserveParam3=qita">
+                <img src="images/tc_btn.jpg" alt=""/>
+            </a></div>
+        </div>
+        <div class="modale modal">
+            <div class="close"><img src="images/close.jpg" class="closemodal"/></div>
+            <div class="leixing"><img src="images/E.jpg" alt=""/></div>
+            <div class="loadapp lastbox"><a
+                    href="http://mobile.sunland.org.cn/activity/mlink/getExtentionPage?channel=tengxunzhihuitui&scene=xiangmuye&configUser=mengxiangyue&siteId=603220697&pageDetail=homepage&reserveParam1=19juntuan&reserveParam2=moqiuli&reserveParam3=qita">
+                <img src="images/tc_btn.jpg" alt=""/>
+            </a></div>
+        </div>
+        </div>
+        <div class="phone">
+            <form name="messageForm" method="post" action="/message.action" id="messageForm1">
+                <input type="hidden" name="msg.remark" class="enterinput" id="remark" value="张三"/>
+                <input type="hidden" value="" name="msg.email" id="email"/>
+                <input type="hidden" value="" name="msg.name" class="enterinput" id="name"/>
+                <!--<input type="hidden" name="msg.phone" id="phone"  placeholder="请输入您的电话号码" />-->
+                <input type="hidden" value="北京分校" name="msg.school_code" id="schoolCode"/>
+                <input type="hidden" value="北京自考" name="msg.project_code"/>
+                <input type="hidden" value="张三" name="msg.message_type"/>
+                <input type="hidden" name="msg.field3" id="field3" value=""/>
+                <input type="hidden" value="http://i.sunlands.com/portal-war/message.action" id="msgUrl"/>
+                <input type="text" placeholder="请输入11位手机号" id="tel" name="msg.phone"/>
+                <p><input type="text" id="vCode"><a href="javascript:;" class="abled" id="getVcode">获取验证码</a></p>
+                <a href="javascript:;" id="submittel" class="submittel"><img src="images/freebtn.jpg" alt=""/></a>
+            </form>
+
+
+        </div>
+
+    </div>
+    <div id="scrollDiv">
+        <ul>
+            <li>学员136****3660已领取测评结果，建议可报考复旦大学行政</li>
+            <li>学员182****8687<span class="redfont">获得免费报考资料大礼包</span></li>
+            <li>学员139****4593已领取测评结果，建议可报考华东师范大学</li>
+        </ul>
+    </div>
+    <p class="bluefont sma">
+        <small>*上海地区截至目前已有<span class="redfont">3268人</span>免费获取测评结果</small>
+    </p>
+    <div class="gift">
+        <div class="phone gift_phone">
+            <form name="messageForm" method="post" action="/message.action" id="messageForm1">
+                <input type="hidden" name="msg.remark" class="enterinput" id="remark" value="张三"/>
+                <input type="hidden" value="" name="msg.email" id="email"/>
+                <input type="hidden" value="" name="msg.name" class="enterinput" id="name"/>
+                <!--<input type="hidden" name="msg.phone" id="phone"  placeholder="请输入您的电话号码" />-->
+                <input type="hidden" value="北京分校" name="msg.school_code" id="schoolCode"/>
+                <input type="hidden" value="北京自考" name="msg.project_code"/>
+                <input type="hidden" value="张三" name="msg.message_type"/>
+                <input type="hidden" name="msg.field3" id="field3" value=""/>
+                <input type="hidden" value="http://i.sunlands.com/portal-war/message.action" id="msgUrl"/>
+                <input type="text" placeholder="请输入11位手机号" id="tel1" name="msg.phone"/>
+                <p><input type="text" id="vCode1"><a href="javascript:;" class="abled1" id="getVcode1">获取验证码</a></p>
+                <a href="javascript:;" id="submitgif"><img src="images/raff.png" alt=""/></a>
+            </form>
+        </div>
+    </div>
+    <div class="student_lunbo">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide1"></div>
+                <div class="swiper-slide slide2"></div>
+                <div class="swiper-slide slide3"></div>
+                <div class="swiper-slide slide4"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev swiper-button-black" id="sw-left"></div>
+            <div class="swiper-button-next swiper-button-black" id="sw-right"></div>
+        </div>
+    </div>
+    <div class="loadapp"><a
+            href="http://mobile.sunland.org.cn/activity/mlink/getExtentionPage?channel=tengxunzhihuitui&scene=xiangmuye&configUser=mengxiangyue&siteId=603220697&pageDetail=homepage&reserveParam1=19juntuan&reserveParam2=moqiuli&reserveParam3=qita">
+        <img src="images/load.png" alt=""/>
+    </a></div>
+    <div class="zikao"></div>
+    <div class="loadapp lastbox"><a
+            href="http://mobile.sunland.org.cn/activity/mlink/getExtentionPage?channel=tengxunzhihuitui&scene=xiangmuye&configUser=mengxiangyue&siteId=603220697&pageDetail=homepage&reserveParam1=19juntuan&reserveParam2=moqiuli&reserveParam3=qita">
+        <img src="images/join.png" alt=""/>
+    </a></div>
+    <div class="footer">
+        <p>京ICP备14002947号-8</p>
+        <p>北京尚德教育科技有限公司</p>
+    </div>
+</div>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="http://dl.ntalker.com/js/xn6/ntkfstat.js?siteid=kf_9740"
+        charset="utf-8"></script>
+<script type="text/javascript" src="http://lp.sunlands.com/js/portalJs/message.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true, //点击分页符切换
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        initialSlide: 0, //默认的索引
+        autoplay: 500,//可选选项，自动滑动
+        speed: 400,//滑动速度
+        loop: true,
+        width :window.innerWidth,
+    });
+</script>
+<script language="javascript" type="text/javascript">
+    NTKF_PARAM = {
+        siteid: "kf_9740",                            //公司ID   固定,
+        settingid: "kf_9740_603224686",             //子站点id
+        erpparam: "settingid:kf_9740_603224686"
+    }
+    //    学员轮播
+    function AutoScroll(obj) {
+        $(obj).find("ul:first").animate({
+            marginTop: "-25px"
+        }, 500, function () {
+            $(this).css({marginTop: "0px"}).find("li:first").appendTo(this);
+        });
+    }
+    $(document).ready(function () {
+        setInterval('AutoScroll("#scrollDiv")', 3000)
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,282 @@
+html,body{
+	font-family:"微软雅黑","Arial","宋体","黑体";
+	padding:0;
+	margin:0 auto;
+	max-width:640px;
+	background:#faf4d6;
+}
+div,form,ul,ol,li,span,p,dl,dt,dd,img,section,header,footer,input,textarea,a,i{
+	padding: 0;
+	margin:0;
+	border: 0;
+	list-style:none;
+	outline：none;
+}
+img{
+	width:100%;
+	display:block;
+}
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+ 	-webkit-appearance: none;
+}
+select {
+	height:54px;
+	font-size:18px;
+	color:#999;
+	border:1px solid #c9c9c9;
+	border-radius:6px;
+  	text-indent:12px;
+  /*很关键：将默认的select选择框样式清除*/
+  	appearance:none;
+  	-o-appearance:none;
+  	-ms-appearance:none;
+  	-moz-appearance:none;
+  	-webkit-appearance:none;
+  /*在选择框的最右侧中间显示小箭头图片*/
+  	background:#fff url("../images/arrow.png") no-repeat  95% center;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #4b1703;  
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #4b1703;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #4b1703;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #4b1703;
+}
+.part1{
+	width:100%;
+	background:url("../images/1_02.png")no-repeat left top;
+	background-size:2.38rem 4.31rem;
+}
+.man{
+	width:100%;
+	/*animation-name: pulse;
+	animation-duration: 2s;
+  	animation-fill-mode: both;
+  	animation-iteration-count: infinite;
+  	-webkit-animation-name: pulse;
+	-webkit-animation-duration: 2s;
+  	-webkit-animation-fill-mode: both;
+  	-webkit-animation-iteration-count: infinite;*/
+}
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+@-webkit-keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+.part2{
+	width:100%;	
+	padding-top:2rem;
+	position:relative;
+	padding-bottom:0.75rem;
+}
+/*.p2-1{
+	width:100%;
+	height:2rem;
+	margin:0 auto;
+	border-bottom-right-radius:50%;
+	border-bottom-left-radius:50%;
+	position:relative;
+	overflow:hidden;
+}*/
+.p2-1-1{
+	width:115%;
+	position:absolute;
+	top:-1rem;
+	left:-8%;
+	animation:circle1 10s infinite linear;
+	-webkit-animation:circle1 10s infinite linear;
+}
+.p2-1-2{
+	width:115%;
+	position:absolute;
+	top:-1rem;
+	left:-8%;
+	animation:circle2 10s infinite linear;
+	-webkit-animation:circle2 10s infinite linear;
+}
+.p2-2{
+	position:relative;
+	background:#faf4d6;
+	padding-bottom:0.47rem;
+}
+@keyframes circle1 {
+  0%{
+    transform:rotate(0deg);
+  }
+  100%{
+    transform:rotate(360deg);
+  }
+}
+@-webkit-keyframes circle1 {
+  from {
+    transform:rotate(0deg);
+  }
+  to {
+    transform:rotate(360deg);
+  }
+}
+@keyframes circle2 {
+  0%{
+    transform:rotate(360deg);
+  }
+  100%{
+    transform:rotate(0deg);
+  }
+}
+@-webkit-keyframes circle2 {
+  from {
+    transform:rotate(360deg);
+  }
+  to {
+    transform:rotate(0deg);
+  }
+}
+#tel1{
+	width:73%;
+	height:1rem;
+	text-align:center;
+	line-height:1rem;
+	display:block;
+	margin:0 auto 0.16rem;
+	font-size:0.44rem;
+	color:#4b1703;
+	background:#fff;
+	border:1px solid #e3dec3;
+	border-radius:6px;
+}
+#sub1{
+	width:73%;
+	height:1rem;
+	text-align:center;
+	line-height:1rem;
+	display:block;
+	margin:0 auto;
+	font-size:0.44rem;
+	color:#fff;
+	background:#e42b00;
+	border-radius:6px;
+	border-bottom:6px #73453a;
+}
+#demo{
+	width:100%;
+	height:4rem;
+	margin:0.78rem auto 0;
+	overflow:hidden;
+}
+#demo li{
+	text-align:center;
+	font-size:0.38rem;
+	color:#000;
+	line-height:2.5;
+}
+#demo li span{
+	color:red;
+	text-decoration:underline;
+}
+.fix1{
+	display:none;
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0;
+	left:0;
+	background:rgba(0,0,0,.7);
+}
+.fix1-m{
+	width:320px;
+	height:345px;
+	position:relative;
+	top:50%;
+	left:50%;
+	background:url("../images/tantan.png")no-repeat center center;
+	background-size:cover;
+	transform:translate(-50%,-50%);
+	-webkit-transform:translate(-50%,-50%);
+	-moz-transform:translate(-50%,-50%);
+	-o-transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+}
+.fix1-btn{
+	display:block;
+	width:96px;
+	height:58px;
+	position:absolute;
+	top:164px;
+	right:68px;
+}
+.fix1-close{
+	width:52px;
+	height:52px;
+	position:absolute;
+	top:8px;
+	left:8px;
+}
+.fix2{
+	display:none;
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0;
+	left:0;
+	background:rgba(0,0,0,.7);
+}
+.fix2-m{
+	width:320px;
+	height:209px;
+	position:relative;
+	top:50%;
+	left:50%;
+	background:url("../images/tantan_2.png")no-repeat center center;
+	background-size:cover;
+	transform:translate(-50%,-50%);
+	-webkit-transform:translate(-50%,-50%);
+	-moz-transform:translate(-50%,-50%);
+	-o-transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+}
+.fix2-btn{
+	display:block;
+	width:178px;
+	height:40px;
+	position:absolute;
+	top:148px;
+	right:71px;
+}
+.fix2-close{
+	width:55px;
+	height:55px;
+	position:absolute;
+	top:15px;
+	right:35px;
+}

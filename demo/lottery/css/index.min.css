@@ -1,0 +1,61 @@
+body,html{width:100%;height:100%}
+*{padding:0;margin:0}
+img{display:block}
+body{position:relative}
+.ttt{animation:_rotate 16s 0s cubic-bezier(.6,.1,.15,.7) 1 normal forwards;-webkit-animation:_rotate 16s 0s cubic-bezier(.6,.1,.15,.7) 1 normal forwards}
+.background{background:url(../img/background.jpg) no-repeat top center;background-size:100% 100%;width:100%;padding-top:.75rem;padding-bottom:.5rem}
+#title{width:87%;margin:0 auto}
+.getPrizeBox{margin:.5rem auto 0;width:5.74rem;height:5.74rem;position:relative}
+.rotateBg{background:url(../img/prizeRotate.png) no-repeat;background-size:contain;width:100%;height:100%;z-index:10}
+.lotteryPoint{position:absolute;top:50%;margin-top:-1.1rem;z-index:20;width:2.2rem;height:2.2rem;left:50%;margin-left:-1.1rem;transform:rotate(-.5deg)}
+.lotteryPoint img{width:100%;height:100%}
+.lotteryBtn{position:absolute;top:50%;z-index:30;width:1.55rem;height:1.55rem;margin:-.775rem 0 0 -.775rem;left:50%}
+.lotteryBtn img{width:100%;height:100%}
+@-webkit-keyframes bigSmall{
+0%,100%{width:100%;height:100%}
+50%{width:110%;height:110%;margin-left:-5%;margin-top:-5%}
+}
+@keyframes bigSmall{
+0%,100%{width:100%;height:100%}
+50%{width:110%;height:110%;margin-left:-5%;margin-top:-5%}
+}
+.getPrizeList{width:5.85rem;height:3.44rem;background:url(../img/listBac.png) no-repeat;background-size:contain;margin:1.1rem auto 0;padding:.42rem 0 0}
+.getPrizeList h3{font-size:.3rem;text-align:center;color:#fada31;margin-bottom:.37rem}
+#rules{margin:.4rem auto 0;width:5.85rem}
+#logo{margin:.6rem auto 0;width:4.3rem}
+.alertBoxMask,.subCellphoneMask{position:fixed;height:100%;width:100%;top:0;left:0;background-color:rgba(0,0,0,.5);display:none;z-index:100}
+.alertBox{width:100%;background-size:contain;font-size:.4rem;position:relative}
+.alertBox img{width:100%}
+.word{position:absolute;color:#fff;top:45%;text-align:center;left:50%;width:72%;margin-left:-34%}
+.watchBox{width:4.6rem;height:1.9rem;margin:0 auto;overflow:hidden;font-size:.21rem}
+.watchBox ul li{margin:.15rem 0;text-align:center;color:#fada31}
+.ani{animation:_rotate 8s cubic-bezier(.5,.1,.3,.7) 1 normal forwards;-webkit-animation:_rotate 8s cubic-bezier(.5,.1,.3,.7) 1 normal forwards}
+.animate{animation:bigSmall 1s ease infinite;-webkit-animation:bigSmall 1s ease infinite}
+.subCellphoneBox{width:66%;background-size:100%;font-size:.4rem;position:relative;margin:30% auto 0}
+.subCellphoneBox img{width:100%}
+.inputBox{position:absolute;color:#fff;top:45%;text-align:center;left:50%;width:72%;margin-left:-34%}
+.inputBox>p{font-size:.12rem;margin:.1rem 0}
+#tel{width:75%;height:.5rem;border-radius:.1rem;text-align:center}
+.vCodeBox{width:75%;background-color:#fff;height:.5rem;margin:0 auto;border-radius:.1rem}
+.vCodeBox p{line-height:.5rem}
+#checkVcode{width:40%;border:none;height:100%;vertical-align:middle}
+#getVcode{font-size:.15rem;border:1px solid #8311e2;color:#8311e2;padding:.05rem;border-radius:.1rem;text-decoration:none;vertical-align:middle}
+.btnBox{position:absolute;top:80%;font-size:.25rem;margin:0 auto;width:74%;left:50%;margin-left:-32%}
+.btnBox a{padding:.1rem 1rem;background-color:#fada31;border-radius:.5rem;text-decoration:none}
+.preLoad{width:100%;position:fixed;height:100%;z-index:1000;background-color:#b9b6ae}
+#jindu{text-align:center;font-size:.5rem;color:#fff;margin-top:10%}
+.loadEffect{width:2rem;height:2rem;margin:0 auto;margin-top:100px;position:relative}
+.loadEffect div{width:100%;height:100%;position:absolute;-webkit-animation:load 3s linear infinite}
+.loadEffect div span{display:inline-block;width:.4rem;height:.4rem;border-radius:50%;background:#90ee90;position:absolute;left:50%;margin-top:-.4rem;margin-left:-.4rem}
+@-webkit-keyframes load{
+0%{-webkit-transform:rotate(0);transform:rotate(0)}
+10%{-webkit-transform:rotate(45deg);transform:rotate(45deg)}
+50%{opacity:1;-webkit-transform:rotate(160deg);transform:rotate(160deg)}
+62%{opacity:0}
+90%{-webkit-transform:rotate(340deg);transform:rotate(340deg)}
+100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}
+}
+.loadEffect div:nth-child(1){-webkit-animation-delay:.2s}
+.loadEffect div:nth-child(2){-webkit-animation-delay:.4s}
+.loadEffect div:nth-child(3){-webkit-animation-delay:.6s}
+.loadEffect div:nth-child(4){-webkit-animation-delay:.8s}

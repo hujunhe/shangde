@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, minimum-scale=1,maximum-scale=1, user-scalable=1, target-densitydpi=device-dpi" name="viewport" />
+	<title>尚德机构</title>
+	<link rel="stylesheet" href="css/index.min.css">
+	<script src="js/rem.js" charset="utf-8"></script>
+	<script src="http://ggtf.sunland.org.cn/statistics/sunlandsLog.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/createjs.js" charset="utf-8"></script>
+	<script src="js/main.js" charset="utf-8"></script>
+	<script src="js/scrollText.js" charset="utf-8"></script>
+	<script type="text/javascript">
+		  var siteId = 111111
+	</script>
+	<style id=dynamic></style>
+</head>
+
+
+<body>
+	<div class="preLoad">
+		<div class="loadEffect">
+			<div><span></span></div>
+			<div><span></span></div>
+			<div><span></span></div>
+			<div><span></span></div>
+		</div>
+		<p id="jindu"><span></span>%</p>
+	</div>
+	<div class="background">
+		<img src="img/title.png" alt="标题" id="title">
+		<div class="getPrizeBox">
+			<div class="rotateBg"></div>
+			<div class="lotteryPoint"><img src="img/pointer.png"></div>
+			<div class="lotteryBtn" id="lotteryBtn">
+				<img src="img/btn.png" class="animate" alt="">
+			</div>
+		</div>
+		<div class="getPrizeList">
+			<h3>获奖名单</h3>
+			<div class="watchBox" id="js_scrollList">
+				<ul class="prizeList">
+				</ul>
+			</div>
+		</div>
+		<img src="img/rules.png" alt="规则" id="rules">
+		<img src="img/bottom.png" alt="logo" id="logo">
+	</div>
+	<div class="alertBoxMask">
+		<div class="alertBox">
+			<img src="img/prize.png" alt="">
+			<div class="word">
+				<p>恭喜您获得：</p>
+				<p class="showPrize">双十一特权奖励</p>
+				<p>领奖码：<span class="prizeCode">123111231</span> </p>
+			</div>
+		</div>
+	</div>
+	<div class="subCellphoneMask">
+		<div class="subCellphoneBox">
+			<img src="img/subCell.png" alt="">
+			<div class="inputBox">
+				<input type="phone" name="" value="" id="tel" placeholder="请输入有效手机号码">
+				<p>每个手机号码只能参加一次抽奖</p>
+				<div class="vCodeBox">
+					<p><input type="text" id="checkVcode" name="" value="">
+						<a href="javascript:;" id="getVcode">获取验证码</a></p>
+				</div>
+			</div>
+			<div class="btnBox">
+				<a href="javascript:;" class="btn" id="js_getLottery" data-status="0" data-on="on">立即抽奖</a>
+			</div>
+		</div>
+	</div>
+	<script src="http://ggtf.sunland.org.cn/statistics/interactive.js"></script>
+</body>
+
+</html>

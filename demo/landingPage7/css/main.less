@@ -1,0 +1,503 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  position: relative;
+}
+
+.preLoad {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: #eee;
+
+  #jindu {
+    font-size: 0.36rem;
+    text-align: center;
+    color: black;
+    margin-top: 1.5rem;
+  }
+
+  .loading {
+    width: 123px;
+    height: 40px;
+    margin: 50% auto 0;
+  }
+
+  .loading span {
+    display: inline-block;
+    width: 8px;
+    height: 100%;
+    border-radius: 4px;
+    background: lightgreen;
+    -webkit-animation: load 1s ease infinite;
+  }
+  @-webkit-keyframes load {
+    0%,
+    100% {
+      height: 40px;
+      background: lightgreen;
+    }
+
+    50% {
+      height: 70px;
+      margin: -15px 0;
+      background: lightblue;
+    }
+  }
+
+  .loading span:nth-child(2) {
+    -webkit-animation-delay: 0.2s;
+  }
+
+  .loading span:nth-child(3) {
+    -webkit-animation-delay: 0.4s;
+  }
+
+  .loading span:nth-child(4) {
+    -webkit-animation-delay: 0.6s;
+  }
+
+  .loading span:nth-child(5) {
+    -webkit-animation-delay: 0.8s;
+  }
+}
+
+header {
+  overflow: hidden;
+  width: 100%;
+  font-size: 0.23rem;
+  background-color: #ddd8b7;
+  padding: 1% 0;
+
+  p {
+    margin: 0;
+  }
+
+  .leftBox {
+    height: 100%;
+    float: left;
+    width: 50%;
+
+    img {
+      height: 0.6rem;
+      float: left;
+      margin: 2% 0 2% 0.4rem;
+      border-radius: 0.1rem;
+    }
+
+    .left_word {
+      float: left;
+      margin-top: 2%;
+      margin-left: 0.1rem;
+    }
+  }
+
+  .rightBox {
+    .btnBox {
+      border: 1px solid #5c7a5d;
+      width: 2.3rem;
+      height: 0.5rem;
+      line-height: 0.5rem;
+      display: block;
+      border-radius: 0.3rem;
+      text-align: center;
+      float: right;
+      margin-right: 0.14rem;
+      margin-top: 2%;
+      color: #5c7a5d;
+    }
+  }
+}
+
+.rotateBox {
+  position: fixed;
+  bottom: 0.2rem;
+  z-index: 5;
+  font-size: 0.24rem;
+  background-color: rgba(144,160,130,0.8);
+  padding: 0.3rem 0.4rem;
+  border-radius: 50%;
+  right: 35%;
+
+  p {
+    margin: 0;
+    text-align: center;
+
+    span {
+      color: #ffcc00;
+    }
+  }
+}
+
+.small {
+  animation: moveLeft 1s;
+  animation-fill-mode: forwards;
+}
+
+.mainBody {
+  height: 93%;
+  padding-bottom: 14%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  .swiper-container {
+    height: 100%;
+
+    .swiper-pagination {
+      top: -.55rem;
+      left: 0.4rem;
+      text-align: left;
+    }
+  }
+
+  .content1 {
+    background: url("../img/swipe1_back.jpg") no-repeat top center;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+
+    h2 {
+      font-size: 0.5rem;
+      font-weight: normal;
+      text-align: center;
+      margin-top: 0;
+
+      span {
+        font-size: 0.97rem;
+        color: #ffd200;
+      }
+    }
+
+    p {
+      font-size: 0.28rem;
+      text-align: center;
+    }
+  }
+
+  .content2 {
+    background: url("../img/swipe2_back.jpg") no-repeat top center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    padding-top: 0.5rem;
+
+    img {
+      width: 3.6rem;
+      margin: 0 auto;
+    }
+  }
+
+  .content3 {
+    background: url("../img/swipe3_back.jpg") no-repeat top center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    padding-top: 0.7rem;
+
+    img {
+      width: 3.3rem;
+      margin-left: 0.34rem;
+    }
+  }
+
+  .connection1 {
+    padding: 1.1rem 0 0.9rem;
+    background: url("../img/connection1.jpg") no-repeat top center;
+    background-size: cover;
+
+    h3 {
+      font-size: 0.64rem;
+      margin: 0;
+      font-weight: normal;
+      text-align: center;
+      color: #fff;
+    }
+  }
+
+  .fourPic {
+    padding: 0.1rem 0.1rem 0.6rem;
+    overflow: hidden;
+
+    .singleBox {
+      width: 50%;
+      float: left;
+    }
+
+    .pic1 {
+      background: url("../img/pics.png") no-repeat 0 0;
+    }
+
+    .pic2 {
+      background: url("../img/pics.png") no-repeat 0 -2rem;
+    }
+
+    .pic3 {
+      background: url("../img/pics.png") no-repeat 0 -4rem;
+    }
+
+    .pic4 {
+      background: url("../img/pics.png") no-repeat 0 -6rem;
+    }
+
+    .imgBack {
+      width: 3rem;
+      height: 2rem;
+      background-size: 100%;
+      border-radius: 0.1rem;
+    }
+
+    p {
+      font-size: 0.17rem;
+      text-align: center;
+      margin: 0.1rem 0;
+    }
+  }
+
+  .fourPic_wish {
+    padding: 0.5rem 0 0;
+    background: url("../img/fourPic_back.jpg") no-repeat top center;
+    background-size: cover;
+
+    .title {
+      color: #fff;
+      text-align: center;
+
+      h3 {
+        font-size: 0.42rem;
+        font-weight: normal;
+        margin: 0 0 0.3rem;
+      }
+
+      p {
+        font-size: 0.28rem;
+        margin: 0;
+      }
+    }
+
+    .Pic_wish {
+      padding: 0.1rem 0.1rem 0.6rem;
+      overflow: hidden;
+
+      .singleBox {
+        width: 50%;
+        float: left;
+        margin-top: 0.1rem;
+
+        .pic1 {
+          background: url("../img/pics.png") no-repeat 0 -8rem;
+        }
+
+        .pic2 {
+          background: url("../img/pics.png") no-repeat 0 -10rem;
+        }
+
+        .pic3 {
+          background: url("../img/pics.png") no-repeat 0 -12rem;
+        }
+
+        .pic4 {
+          background: url("../img/pics.png") no-repeat 0 -14rem;
+        }
+
+        .imgBack {
+          width: 3rem;
+          height: 1.8rem;
+          background-size: 100%;
+          border-radius: 0.1rem;
+          margin-bottom: 0.1rem;
+        }
+
+        p {
+          text-align: center;
+          font-size: 0.17rem;
+          color: #fff;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .studentReply {
+    padding-bottom: 0.7rem;
+
+    h3 {
+      font-size: 0.42rem;
+      text-align: center;
+      font-weight: normal;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .schoolArea {
+    background: url("../img/school_back.jpg") no-repeat top center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem 0 0.3rem;
+
+    h3 {
+      font-size: 0.42rem;
+      margin: 0;
+    }
+
+    p {
+      font-size: 0.28rem;
+    }
+
+    #school {
+      width: 98%;
+      margin: 0 auto;
+    }
+
+    #schoolAdd {
+      width: 98%;
+      margin: 0.32rem auto 0;
+    }
+  }
+
+  .promise {
+    padding: 0.5rem 0;
+
+    img {
+      width: 3.87rem;
+      margin: 0 auto;
+    }
+  }
+
+  .company {
+    background: url("../img/company_back.jpg") no-repeat top center;
+    background-size: cover;
+    padding: 0.6rem 0;
+    color: #fff;
+    text-align: center;
+
+    h3 {
+      font-size: 0.42rem;
+      margin: 0;
+      font-weight: normal;
+      margin-bottom: 0.4rem;
+    }
+
+    img {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+}
+
+.alertBox {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+
+  .title {
+    font-size: 0.34rem;
+    text-align: center;
+    color: #f96e45;
+    position: relative;
+
+    .close {
+      position: absolute;
+      left: 0.3rem;
+      margin-left: 0.3rem;
+
+      img {
+        height: 0.3rem;
+      }
+    }
+  }
+
+  .content {
+    font-size: 0.24rem;
+    padding: 0.5rem;
+
+    p {
+      text-align: center;
+      border-bottom: 1px solid #dfdfdf;
+      line-height: 0.7rem;
+
+      input {
+        border: none;
+        text-align: center;
+        line-height: 0.28rem;
+        font-size: 0.26rem;
+      }
+
+      a#getVinCode {
+        color: #c2c2c2;
+        padding: 0.1rem;
+        border: 1px solid #c2c2c2;
+        border-radius: 0.5rem;
+      }
+
+      a#but1 {
+        color: #fff;
+        background-color: #f85415;
+        padding: 0.1rem;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+
+  p {
+    font-size: 0.24rem;
+    text-align: center;
+    line-height: 0.8rem;
+    height: 0.8rem;
+    margin: 0.0rem;
+
+    span {
+      font-size: 0.32rem;
+      color: #ff3030;
+    }
+
+    a {
+      padding: 0.1rem 0.5rem;
+      background-color: #ff3d4c;
+      color: #fff;
+      margin-left: 0.2rem;
+      border-radius: 0.1rem;
+    }
+  }
+}
+
+.smallIcon {
+  display: none;
+}
+@keyframes moveLeft {
+  100% {
+    right: 0.1rem;
+    padding: 0.1rem 0.2rem;
+    bottom: 0.8rem;
+  }
+}

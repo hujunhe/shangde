@@ -1,0 +1,93 @@
+
+
+$(function(){
+	$('.p1_word img').animate({opacity:1},1000,function(){
+		
+		$('.p1_word img').animate({opacity:0},1000,function(){
+			
+			$('.bg2').animate({opacity:1},1000,function(){
+				$('#array').show();
+			});
+		})
+	});
+
+
+$("#scrollDiv").Scroll({line:2,speed:1000,timer:3000});
+
+var num =3268;
+var int=self.setInterval(function(){
+num++;
+$('.num').html(num);
+},50);
+
+
+
+
+})
+
+
+$.fn.extend({
+        Scroll:function(opt,callback){
+                //参数初始化
+                if(!opt) var opt={};
+                var _this=this.eq(0).find("ul:first");
+                var        lineH=_this.find("li:first").height(), //获取行高
+                        line=opt.line?parseInt(opt.line,10):parseInt(this.height()/lineH,10), //每次滚动的行数，默认为一屏，即父容器高度
+                        speed=opt.speed?parseInt(opt.speed,10):500, //卷动速度，数值越大，速度越慢（毫秒）
+                        timer=opt.timer?parseInt(opt.timer,10):3000; //滚动的时间间隔（毫秒）
+                if(line==0) line=1;
+                var upHeight=0-line*lineH;
+                //滚动函数
+                scrollUp=function(){
+                        _this.animate({
+                                marginTop:upHeight
+                        },speed,function(){
+                                for(i=1;i<=line;i++){
+                                        _this.find("li:first").appendTo(_this);
+                                }
+                                _this.css({marginTop:0});
+                        });
+                }
+                //鼠标事件绑定
+                _this.hover(function(){
+                        clearInterval(timerID);
+                },function(){
+                        timerID=setInterval("scrollUp()",timer);
+                }).mouseout();
+        }        
+})
+
+
+function testBack(msg) {
+        //可以为空
+    };
+
+function callback(msg){
+
+		$.ajax({
+            url: encodeURI(encodeURI("http://w.sunlands.com/tuiguang/ajax_tuiguang_message.htm?tel=" + msg.phone + "&name=" + msg.name
+            + "&messageId=" + msg.messageId + "&schoolId=" + msg.schoolId + "&callback=" + testBack)),
+            type: "get",
+            dataType: "jsonp",
+            jsonp: testBack,//回调函名称必须有,和参数&callback="的值一样的
+            success: function (data) { }
+        });
+var d = new Date();
+
+    if(d.getSeconds()%2==1){
+    $(".fixed").show();
+    //$('.fix-gif').show();
+    setTimeout(function(){
+      
+    $('.fix-word').show();
+    },1000);
+  }else{
+    $(".fixed2").show();
+    //$('.fix-gif').show();
+    setTimeout(function(){
+    $('.fix-word2').show();
+    },1000);
+  }
+
+}
+

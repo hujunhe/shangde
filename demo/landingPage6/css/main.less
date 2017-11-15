@@ -1,0 +1,759 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+.page1,
+.page10,
+.page11,
+.page12,
+.page13,
+.page14,
+.page15,
+.page16,
+.page17,
+.page18,
+.page2,
+.page3,
+.page4,
+.page5,
+.page6,
+.page7,
+.page8,
+.page9,
+.preLoad {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.preLoad{
+  background-color: grey;
+  #jindu{
+    font-size: 0.36rem;
+    text-align: center;
+    color: #fff;
+    margin-top: 1.5rem;
+  }
+  .loading{
+              width: 123px;
+              height: 40px;
+              margin: 0 auto;
+              margin-top:50%;
+          }
+          .loading span{
+              display: inline-block;
+              width: 8px;
+              height: 100%;
+              border-radius: 4px;
+              background: lightgreen;
+              -webkit-animation: load 1s ease infinite;
+          }
+          @-webkit-keyframes load{
+              0%,100%{
+                  height: 40px;
+                  background: lightgreen;
+              }
+              50%{
+                  height: 70px;
+                  margin: -15px 0;
+                  background: lightblue;
+              }
+          }
+          .loading span:nth-child(2){
+              -webkit-animation-delay:0.2s;
+          }
+          .loading span:nth-child(3){
+              -webkit-animation-delay:0.4s;
+          }
+          .loading span:nth-child(4){
+              -webkit-animation-delay:0.6s;
+          }
+          .loading span:nth-child(5){
+              -webkit-animation-delay:0.8s;
+          }
+}
+.page16,
+.page2,
+.page3,
+.page4,
+.page9 {
+  background: url("../img/background.jpg") no-repeat;
+  background-size: cover;
+}
+
+.page1 {
+  position: relative;
+  font-size: 0.32rem;
+  background: url(../img/page1_background.jpg) no-repeat;
+  background-size: 100% 100%;
+  .background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0
+  }
+  .logo{
+      position: absolute;
+      left: 50%;
+      width: 1rem;
+      margin-left: -0.5rem;
+      z-index: 1;
+      top: 10%;
+  }
+
+  p {
+    position: absolute;
+    z-index: 1;
+
+    color: #505052;
+    left: 50%;
+  }
+  .page1Tit{
+    top: 5rem;
+    margin-left: -25%;
+  }
+  .page1Tip{
+    top: 7rem;
+    margin-left: -0.4rem;
+  }
+}
+
+.page2 {
+  font-size: 0.24rem;
+
+  .title {
+    width: 4.6rem;
+    margin: 0.5rem auto;
+  }
+
+  .talkingBox {
+    width: 5.6rem;
+
+    ul {
+      width: 5.2rem;
+      margin: 0 auto 0.5rem;
+      overflow: hidden;
+
+      li {
+        display: none;
+        overflow: hidden;
+      }
+    }
+    margin: auto;
+
+    .man {
+      height: 1rem;
+
+      .headPic {
+        width: 1rem;
+        height: 1rem;
+        float: left;
+        background: url("../img/page2_headPic.png") 0 0;
+        background-size: 4.95rem 4.2rem;
+      }
+      .talkingStyle(#c9deb9);
+    }
+
+    .man1 {
+      height: 1.5rem;
+
+      .headPic {
+        width: 1rem;
+        height: 1rem;
+        float: left;
+        background: url("../img/page2_headPic.png") 2.85rem 0;
+        background-size: 4.95rem 4.2rem;
+      }
+      .talkingStyle(#cbceda);
+    }
+
+    .woman {
+      height: 1.5rem;
+
+      .headPic {
+        width: 1rem;
+        height: 1rem;
+        float: right;
+        background: url("../img/page2_headPic.png") 3.8rem 0;
+        background-size: 4.95rem 4.2rem;
+      }
+      .talkingStyle(#e9e3e3);
+    }
+
+    .icon {
+      width: 2.5rem;
+      height: 1.9rem;
+      background: url("../img/page2_headPic.png") 0 -1.1rem;
+      background-size: 4.95rem 4.2rem;
+      float: right;
+    }
+  }
+}
+
+.page3 {
+  .title {
+    width: 4.7rem;
+    height: 1.5rem;
+    background-color: #ffdc23;
+    margin: 0.3rem auto;
+    padding-top: 0.25rem;
+
+    img {
+      width: 4.2rem;
+      margin: 0 auto;
+    }
+  }
+
+  .tempBox {
+    width: 4.1rem;
+    height: 5rem;
+    margin: 0 auto 0.5rem;
+    position: relative;
+
+    .leftWord {
+      width: 55%;
+      float: left;
+
+      ul {
+        li {
+          margin: 0.2rem auto;
+          text-align: center;
+          display: none;
+
+          h3 {
+            font-size: 0.24rem;
+            margin: 0;
+            padding: 0;
+          }
+
+          p {
+            font-size: 0.24rem;
+            margin: 0;
+            padding: 0;
+
+            span {
+              color: #b9070e;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+
+    .rightPic {
+      width: 45%;
+      float: right;
+
+      .thermometer {
+        width: 100%;
+        height: 5rem;
+        position: relative;
+        background: url("../img/page3_temp.png")no-repeat;
+        background-size: contain;
+
+        .hotLine {
+          width: 12.5%;
+          height: 3.3rem;
+          position: absolute;
+          bottom: 0.9rem;
+          left: 50%;
+          margin-left: -13%;
+          overflow: hidden;
+
+          .redColor {
+            background-color: #ff3333;
+            height: 100%;
+            position: absolute;
+            width: 100%;
+            top: 100%;
+          }
+        }
+
+        .redBall {
+          width: 0.5rem;
+          height: 0.5rem;
+          background-color: #ff3333;
+          border-radius: 50%;
+          position: absolute;
+          bottom: 0.5rem;
+          left: 50%;
+          margin-left: -20%;
+        }
+      }
+    }
+
+    .finish {
+      width: 2.5rem;
+      height: 1.9rem;
+      background: url("../img/page2_headPic.png") -2.3rem -1.2rem;
+      background-size: 4.95rem 4.2rem;
+      position: absolute;
+      right: -1rem;
+      bottom: -1rem;
+      display: none;
+    }
+  }
+}
+
+.page4 {
+  .title {
+    width: 4.7rem;
+    height: 1.5rem;
+    background-color: #ffdc23;
+    margin: 0.3rem auto 0;
+    padding-top: 0.25rem;
+
+    img {
+      width: 4.2rem;
+      margin: 0 auto;
+    }
+  }
+
+  .searchBox {
+    background: url(../img/page4_input.jpg)no-repeat;
+    width: 4.6rem;
+    height: 1.6rem;
+    background-size: contain;
+    margin: 0 auto;
+    position: relative;
+
+    p {
+      position: absolute;
+      top: 0.5rem;
+      left: 0.7rem;
+    }
+
+    #baiduSearch {
+      width: 1rem;
+      height: 0.5rem;
+      display: block;
+      position: absolute;
+      top: 0.6rem;
+      right: 0.3rem;
+    }
+    .pointer(1rem,0.5rem);
+  }
+
+  .searchResult {
+    width: 4.5rem;
+    height: 5rem;
+    margin: 0 auto;
+
+    .box {
+      height: 50%;
+      width: 85%;
+      margin: 0 auto;
+
+      img {
+        width: 100%;
+        display: none;
+      }
+    }
+  }
+
+  .popBox {
+    display: none;
+    width: 5rem;
+    position: absolute;
+    height: 6.7rem;
+    background: url(../img/page4_popBox.jpg)no-repeat;
+    background-size: contain;
+    top: 1.7rem;
+    left: 50%;
+    margin-left: -2.5rem;
+
+    .rightTopIcon {
+      background: url(../img/icon_sprite.png)no-repeat 0 0;
+      background-size: 4rem 40rem;
+      width: 2.6rem;
+      height: 2.2rem;
+      position: absolute;
+      top: 1rem;
+      right: 0.5rem;
+    }
+
+    #nextPage {
+      position: absolute;
+      top: 0.4rem;
+      right: 0.2rem;
+      width: 1.1rem;
+      height: 0.5rem;
+    }
+    .pointer(0.7rem,0.5rem);
+  }
+}
+
+.page5 {
+  background: url("../img/page5_bac.jpg") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+
+  .remberIcon {
+    background: url("../img/icon_sprite.png") no-repeat 0 -2.6rem;
+    background-size: 4rem 40rem;
+    width: 3.5rem;
+    height: 2rem;
+    position: absolute;
+    top: 40%;
+    right: 0.5rem;
+  }
+  .pointer(80%,25%);
+}
+
+.page6 {
+  background: url("../img/page7_bac.gif") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+
+  .pointer(95%,45%);
+}
+
+.page7 {
+  background: url("../img/page8_bac.jpg") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+
+
+  .mateIcon {
+    background: url("../img/icon_sprite.png") no-repeat 0 -4.6rem;
+    background-size: 4rem 40rem;
+    width: 2.4rem;
+    height: 1.9rem;
+    position: absolute;
+    top: 40%;
+    right: 0.5rem;
+  }
+  .pointer(85%,45%);
+}
+
+.page8 {
+  background: url("../img/page9_bac.jpg") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+
+  .findPassIcon {
+    background: url("../img/icon_sprite.png") no-repeat 0 -6.9rem;
+    background-size: 4rem 40rem;
+    width: 3.3rem;
+    height: 2.6rem;
+    position: absolute;
+    top: 40%;
+    right: 0.5rem;
+  }
+  .pointer(85%,45%);
+}
+.page16,
+.page12,
+.page14,
+.page9 {
+  position: relative;
+
+  .title {
+    width: 85%;
+    margin: 0.3rem auto;
+  }
+
+  .tempBox {
+    background: url("../img/page10_temp.png") no-repeat;
+    background-size: contain;
+    width: 1.5rem;
+    height: 5rem;
+    margin: 0.5rem auto 1rem;
+    position: relative;
+
+    .number {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      text-align: center;
+      color: red;
+    }
+
+    .hotLine {
+      position: absolute;
+      width: 0.19rem;
+      height: 3rem;
+      top: 0.8rem;
+      left: 50%;
+      margin-left: -0.1rem;
+      overflow: hidden;
+
+      .color {
+        background-color: #ffd933;
+        width: 100%;
+        height: 100%;
+        top: 100%;
+        position: absolute;
+      }
+    }
+  }
+
+  .seventyPerIcon {
+    background: url("../img/icon_sprite.png") no-repeat 0 -14.5rem;
+    background-size: 4rem 40rem;
+    width: 3.7rem;
+    height: 2.2rem;
+    position: absolute;
+    top: 45%;
+    right: 0.5rem;
+  }
+
+  .tenPerIcon {
+    background: url("../img/icon_sprite.png") no-repeat 0 -17rem;
+    background-size: 4rem 40rem;
+    width: 3.7rem;
+    height: 2.3rem;
+    position: absolute;
+    top: 50%;
+    right: 0.5rem;
+  }
+}
+
+.page10 {
+  background: url("../img/page11_bac.jpg") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+
+  .startClassIcon {
+    background: url("../img/icon_sprite.png") no-repeat 0 -9.9rem;
+    background-size: 4rem 40rem;
+    width: 3.5rem;
+    height: 2.1rem;
+    position: absolute;
+    top: 60%;
+    right: 0.5rem;
+  }
+  .pointer(56%,67%);
+
+  #page10Btn {
+    width: 1.6rem;
+    height: 1.4rem;
+    display: block;
+    position: absolute;
+    top: 54%;
+    left: 12%;
+  }
+}
+
+.page11 {
+  background: url("../img/page12_bac.jpg") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  .pointer(80%,30%);
+
+  .allRoadIcon {
+    background: url("../img/icon_sprite.png") no-repeat 0 -12.3rem;
+    background-size: 4rem 40rem;
+    width: 2.2rem;
+    height: 1.9rem;
+    position: absolute;
+    top: 60%;
+    right: 0.5rem;
+  }
+}
+
+.page13 {
+  background: url("../img/page14_bac.jpg") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+
+  .timeIcon {
+    background: url("../img/icon_sprite.png") no-repeat 0 -19.9rem;
+    background-size: 4rem 40rem;
+    width: 2.9rem;
+    height: 2.4rem;
+    position: absolute;
+    top: 60%;
+    right: 0.5rem;
+  }
+  .pointer(94%,30%);
+}
+
+.page15 {
+  background: url("../img/page15_bac.jpg") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  .thisIcon {
+    background: url("../img/icon_sprite.png") no-repeat 0 -22.5rem;
+    background-size: 4rem 40rem;
+    width: 2.5rem;
+    height: 2.2rem;
+    position: absolute;
+    top: 20%;
+    left: 0.5rem;
+  }
+  .pointer(80%,35%);
+}
+.page17{
+  background: url("../img/page18_bac.jpg") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  .thisIcon {
+    background: url("../img/icon_sprite.png") no-repeat 0 -25rem;
+    background-size: 4rem 40rem;
+    width: 3.6rem;
+    height: 2.3rem;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-left: -1.8rem;
+  }
+}
+// 公用
+
+.insideBox {
+  width: 5.7rem;
+  margin: 0.3rem auto 0.2rem;
+  border: 0.02rem solid #555555;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  font-size: 0.24rem;
+}
+//手
+
+.pointer(@top, @right) {
+  .hands {
+    position: absolute;
+    width: 0.4rem;
+    right: @right;
+    top: @top;
+    animation-iteration-count: infinite;
+  }
+}
+//按钮
+
+.nextBtn {
+  width: 5rem;
+  height: 1rem;
+  display: block;
+  background: url("../img/page2_headPic.png") no-repeat 0 -3.2rem;
+  margin: 0 auto;
+  background-size: 4.95rem 4.2rem;
+}
+//对话框
+
+.talkingStyle(@color) {
+  .talking_left {
+    position: relative;
+    width: 3rem;
+    border-radius: 0.2rem;
+    margin-left: 1.1rem;
+    top: 0.2rem;
+    text-align: left;
+    background: @color;
+    font-size: 0.24rem;
+    padding: 0.15rem;
+
+    p {
+      margin: 0;
+    }
+
+    &:after,
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 0;
+      border: 0.2rem solid transparent;
+      border-right-color: @color;
+      left: -0.4rem;
+      top: 8px;
+      z-index: 1;
+    }
+  }
+
+  .talking_right {
+    position: relative;
+    width: 3rem;
+    border-radius: 0.2rem;
+    top: 0.2rem;
+    text-align: left;
+    background: @color;
+    font-size: 0.24rem;
+    float: right;
+    margin-right: 0.2rem;
+    padding: 0.15rem;
+
+    p {
+      margin: 0;
+    }
+
+    &:after,
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 0;
+      border: 0.2rem solid transparent;
+      border-left-color: @color;
+      right: -0.4rem;
+      top: 8px;
+      z-index: 1;
+    }
+  }
+}
+//动画
+
+.cartoon0_3 {
+  animation-delay: 0.3s;
+}
+
+.cartoon0_5 {
+  animation-delay: 0.5s;
+}
+
+.cartoon0_6 {
+  animation-delay: 0.6s;
+}
+
+.cartoon0_8 {
+  animation-delay: 0.8s;
+}
+
+.cartoon1_0 {
+  animation-delay: 1s;
+}
+
+.cartoon1_2 {
+  animation-delay: 1.2s;
+}
+
+.cartoon1_4 {
+  animation-delay: 1.5s;
+}
+
+.cartoon1_8 {
+  animation-delay: 1.8s;
+}
+
+.cartoon2_0 {
+  animation-delay: 2s;
+}
+.cartoon2_8 {
+  animation-delay: 2.8s;
+}
+.inifty{
+  animation-iteration-count: infinite;
+}
+.IconNo{
+  display: none;
+}

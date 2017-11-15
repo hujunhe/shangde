@@ -1,0 +1,11 @@
+﻿@charset "utf-8";
+/* CSS Document */
+body{ margin:0;}
+.bigbox{ width:100%; height:;}
+.box{ width:100%;;margin:0 auto;}
+.box img{ width:100%; height:auto; display:block; margin:0; padding:0;}
+.dw{ position:relative;top:0; left:0;}
+.liuyan{ position:absolute; top:23%; width:60%; left:50%; margin-left:-25%;}
+.box .dingwei{ position:relative;top:0; left:0;}
+.shouji input{ height:36px; width:82%; margin-bottom:24px; border:none; text-align:center; font-size:14px; }
+.button input{ height:50px; width:83%; margin-bottom:30px; background-color:#ffd93f; border:none; font-size:20px;}

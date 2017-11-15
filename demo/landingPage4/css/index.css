@@ -1,0 +1,484 @@
+html, body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    background: #f2f2f2;
+}
+
+.clearfix {
+    width: 100%;
+    height: 0;
+    clear: both;
+}
+
+.page2 {
+    background-image: url("../images/firstpage.png");
+    width: 100%;
+    height: 100%;
+    max-width: 640px;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    position: absolute;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#submits {
+    display: block;
+    margin: 0 auto;
+    width: 10rem;
+    height: 2rem;
+    position: absolute;
+    top: 88%;
+    left: 20%;
+}
+
+#submits img {
+    width: 100%;
+    height: 100%;
+}
+
+/*ģ̬��*/
+
+#modal_overlay{
+    display: none;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: 1000;
+    background-color: rgba(51,51,51,0.61);
+
+}
+.modala{
+    display: none;
+    width: 13rem;
+    height: 18rem;
+    background: white;
+    border-radius: 5px;
+    position: absolute;
+    top: 15%;
+    left: 6%;
+    padding: 10px;
+}
+
+.leixing img {
+    width: 100%;
+    height: 100%;
+    float: right;
+}
+
+#close {
+    width: 1rem;
+    height: 1rem;
+}
+
+#modal .close {
+    width: 100%;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    float: right;
+}
+
+.close img {
+    float: right;
+}
+
+.modalb{
+    display: none;
+    width: 13rem;
+    height: 18rem;
+    background: white;
+    border-radius: 5px;
+    position: absolute;
+    top: 15%;
+    left: 6%;
+    padding: 10px;
+}
+
+.leixing img {
+    width: 100%;
+    height: 100%;
+    float: right;
+}
+
+#close {
+    width: 1rem;
+    height: 1rem;
+}
+
+#modal .close {
+    width: 100%;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    float: right;
+}
+
+.close img {
+    float: right;
+}
+
+
+.modalc{
+    display: none;
+    width: 13rem;
+    height: 18rem;
+    background: white;
+    border-radius: 5px;
+    position: absolute;
+    top: 15%;
+    left: 6%;
+    padding: 10px;
+}
+
+.leixing img {
+    width: 100%;
+    height: 100%;
+    float: right;
+}
+
+#close {
+    width: 1rem;
+    height: 1rem;
+}
+
+#modal .close {
+    width: 100%;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    float: right;
+}
+
+.close img {
+    float: right;
+}
+.modald{
+    display: none;
+    width: 13rem;
+    height: 18rem;
+    background: white;
+    border-radius: 5px;
+    position: absolute;
+    top: 15%;
+    left: 6%;
+    padding: 10px;
+}
+
+.leixing img {
+    width: 100%;
+    height: 100%;
+    float: right;
+}
+
+#close {
+    width: 1rem;
+    height: 1rem;
+}
+
+#modal .close {
+    width: 100%;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    float: right;
+}
+
+.close img {
+    float: right;
+}
+.modale{
+    display: none;
+    width: 13rem;
+    height: 18rem;
+    background: white;
+    border-radius: 5px;
+    position: absolute;
+    top: 15%;
+    left: 6%;
+    padding: 10px;
+}
+
+.leixing img {
+    width: 100%;
+    height: 100%;
+    float: right;
+}
+
+#close {
+    width: 1rem;
+    height: 1rem;
+}
+
+#modal .close {
+    width: 100%;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    float: right;
+}
+
+.close img {
+    float: right;
+}
+.page3 {
+    width: 100%;
+    background: #f2f2f2;
+    display: none;
+}
+
+#que {
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.tit {
+    text-align: center;
+    width: 100%;
+    height: 4rem;
+}
+
+.tit-one {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.tit-two {
+    width: 100%;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.question {
+    width: 100%;
+    height: 3.5rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.question:last-child {
+    border: none;
+}
+
+.question p {
+    margin: 5px;
+}
+
+.question .que-opt {
+    display: block;
+    float: left;
+    width: 33%;
+}
+
+#tel {
+    width: 13.75rem;
+    height: 1.325rem;
+}
+
+#submittel {
+    margin-top: 10px;
+    display: block;
+    /*margin: 0 auto;*/
+    width: 13.8rem;
+    height: 1.8rem;
+}
+
+#submittel img {
+    width: 100%;
+    height: 100%;
+}
+
+/*ѧԱ�ֲ�*/
+ul, li {
+    margin: 0;
+    padding: 0
+}
+
+#scrollDiv {
+    font-size: 12px;
+    width: 90%;
+    height: 25px;
+    line-height: 25px;
+    border: #ccc 1px solid;
+    overflow: hidden;
+    background: white;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+#scrollDiv li {
+    height: 25px;
+    padding-left: 10px;
+    overflow: hidden;
+}
+
+.redfont {
+    color: red;
+}
+
+.bluefont {
+    color: blue;
+}
+
+.sma {
+    width: 85%;
+    margin: 0 auto;
+}
+
+/*��ȡ����*/
+.gift {
+    width: 100%;
+    height: 21.75rem;
+    background-image: url("../images/gift.png");
+    background-size: 100% 100%;
+    margin: 0 auto;
+    position: relative;
+    cursor: pointer;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+}
+
+.gift_phone {
+    position: absolute;
+    top: 67%;
+    left: 14%;
+}
+
+.gift_phone #tel1 {
+    width: 12rem;
+    height: 1.325rem;
+}
+
+#submitgif {
+    position: absolute;
+    margin-top: 10px;
+    display: block;
+    width: 12rem;
+    height: 1.8rem;
+}
+
+#submitgif img {
+    width: 100%;
+    height: 100%;
+}
+
+/*ͼƬ�ֲ�*/
+
+
+.swiper-container {
+    width: 100%;
+    height: 14rem;
+    margin-bottom: 10px;
+}
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+.slide1{
+    background:url("../images/mxy_stu.png")no-repeat center center;
+    background-size:100% 100%;
+}
+.slide2{
+    background:url("../images/xj_stu.png")no-repeat center center;
+    background-size:100% 100%;
+}
+.slide3{
+    background:url("../images/lj_stu.png")no-repeat center center;
+    background-size:100% 100%;
+}
+.slide4{
+    background:url("../images/zjy_stu.png")no-repeat center center;
+    background-size:100% 100%;
+}
+#sw-left{
+    height: 1rem;
+    position: absolute;
+    top: 43%;
+    left: 1%;
+    color: #ccc;
+}
+#sw-right{
+    height:1rem;
+    position: absolute;
+    top: 43%;
+    right:3%;
+    color: #ccc;
+}
+/*.jtl{*/
+    /*width: 1rem;*/
+    /*height: 1rem;*/
+    /*position: absolute;*/
+    /*top: 43%;*/
+    /*left: 1%;*/
+/*}*/
+/*.jtr{*/
+    /*width: 1rem;*/
+    /*height:1rem;*/
+    /*position: absolute;*/
+    /*top: 43%;*/
+    /*right:3%;*/
+/*}*/
+.loadapp {
+    width: 80%;
+    height: 1.8rem;
+    margin: 0 auto;
+}
+
+.loadapp img {
+    width: 100%;
+    height: 100%;
+}
+
+/*�Կ�*/
+.zikao {
+    width: 100%;
+    height: 19.75rem;
+    background-image: url("../images/zikao.jpg");
+    background-size: 100% 100%;
+    margin: 0 auto;
+    position: relative;
+    cursor: pointer;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+}
+
+.lastbox {
+    margin-bottom: 1rem;
+}
+.footer{
+    width: 100%;
+    height: 2rem;
+    text-align: center;
+    background: #333;
+    color: white;
+    padding-top: 7px;
+}
+.footer p{
+    margin: 0px;
+}
+#vCode,#vCode1{
+  height: 1.325rem;
+  width: 5rem;
+  margin-left: 1.3rem;
+}
+#vCode1{
+  margin-left:0.3rem;
+}
+#getVcode,#getVcode1{
+  display: inline-block;
+  height: 1.325rem;
+  width: 5rem;
+  background-color: #f9b320;
+  line-height: 1.325rem;
+  text-align: center;
+  margin-left: 1.5rem;
+
+}

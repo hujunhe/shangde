@@ -1,0 +1,862 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+img {
+  display: block;
+}
+ul {
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+.page1,
+.page10,
+.page11,
+.page12,
+.page13,
+.page14,
+.page15,
+.page16,
+.page17,
+.page18,
+.page2,
+.page3,
+.page4,
+.page5,
+.page6,
+.page7,
+.page8,
+.page9,
+.preLoad {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.preLoad {
+  background-color: grey;
+}
+.preLoad #jindu {
+  font-size: 0.36rem;
+  text-align: center;
+  color: #fff;
+  margin-top: 1.5rem;
+}
+.preLoad .loading {
+  width: 123px;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 50%;
+}
+.preLoad .loading span {
+  display: inline-block;
+  width: 8px;
+  height: 100%;
+  border-radius: 4px;
+  background: lightgreen;
+  -webkit-animation: load 1s ease infinite;
+}
+@-webkit-keyframes load {
+  0%,
+  100% {
+    height: 40px;
+    background: lightgreen;
+  }
+  50% {
+    height: 70px;
+    margin: -15px 0;
+    background: lightblue;
+  }
+}
+.preLoad .loading span:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+}
+.preLoad .loading span:nth-child(3) {
+  -webkit-animation-delay: 0.4s;
+}
+.preLoad .loading span:nth-child(4) {
+  -webkit-animation-delay: 0.6s;
+}
+.preLoad .loading span:nth-child(5) {
+  -webkit-animation-delay: 0.8s;
+}
+.page16,
+.page2,
+.page3,
+.page4,
+.page9 {
+  background: url("../img/background.jpg") no-repeat;
+  background-size: cover;
+}
+.page1 {
+  position: relative;
+  font-size: 0.32rem;
+  background: url(../img/page1_background.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+.page1 .background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.page1 .logo {
+  position: absolute;
+  left: 50%;
+  width: 1rem;
+  margin-left: -0.5rem;
+  z-index: 1;
+  top: 10%;
+}
+.page1 p {
+  position: absolute;
+  z-index: 1;
+  color: #505052;
+  left: 50%;
+}
+.page1 .page1Tit {
+  top: 5rem;
+  margin-left: -25%;
+}
+.page1 .page1Tip {
+  top: 7rem;
+  margin-left: -0.4rem;
+}
+.page2 {
+  font-size: 0.24rem;
+}
+.page2 .title {
+  width: 4.6rem;
+  margin: 0.5rem auto;
+}
+.page2 .talkingBox {
+  width: 5.6rem;
+  margin: auto;
+}
+.page2 .talkingBox ul {
+  width: 5.2rem;
+  margin: 0 auto 0.5rem;
+  overflow: hidden;
+}
+.page2 .talkingBox ul li {
+  display: none;
+  overflow: hidden;
+}
+.page2 .talkingBox .man {
+  height: 1rem;
+}
+.page2 .talkingBox .man .headPic {
+  width: 1rem;
+  height: 1rem;
+  float: left;
+  background: url("../img/page2_headPic.png") 0 0;
+  background-size: 4.95rem 4.2rem;
+}
+.page2 .talkingBox .man .talking_left {
+  position: relative;
+  width: 3rem;
+  border-radius: 0.2rem;
+  margin-left: 1.1rem;
+  top: 0.2rem;
+  text-align: left;
+  background: #c9deb9;
+  font-size: 0.24rem;
+  padding: 0.15rem;
+}
+.page2 .talkingBox .man .talking_left p {
+  margin: 0;
+}
+.page2 .talkingBox .man .talking_left:after,
+.page2 .talkingBox .man .talking_left:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 0.2rem solid transparent;
+  border-right-color: #c9deb9;
+  left: -0.4rem;
+  top: 8px;
+  z-index: 1;
+}
+.page2 .talkingBox .man .talking_right {
+  position: relative;
+  width: 3rem;
+  border-radius: 0.2rem;
+  top: 0.2rem;
+  text-align: left;
+  background: #c9deb9;
+  font-size: 0.24rem;
+  float: right;
+  margin-right: 0.2rem;
+  padding: 0.15rem;
+}
+.page2 .talkingBox .man .talking_right p {
+  margin: 0;
+}
+.page2 .talkingBox .man .talking_right:after,
+.page2 .talkingBox .man .talking_right:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 0.2rem solid transparent;
+  border-left-color: #c9deb9;
+  right: -0.4rem;
+  top: 8px;
+  z-index: 1;
+}
+.page2 .talkingBox .man1 {
+  height: 1.5rem;
+}
+.page2 .talkingBox .man1 .headPic {
+  width: 1rem;
+  height: 1rem;
+  float: left;
+  background: url("../img/page2_headPic.png") 2.85rem 0;
+  background-size: 4.95rem 4.2rem;
+}
+.page2 .talkingBox .man1 .talking_left {
+  position: relative;
+  width: 3rem;
+  border-radius: 0.2rem;
+  margin-left: 1.1rem;
+  top: 0.2rem;
+  text-align: left;
+  background: #cbceda;
+  font-size: 0.24rem;
+  padding: 0.15rem;
+}
+.page2 .talkingBox .man1 .talking_left p {
+  margin: 0;
+}
+.page2 .talkingBox .man1 .talking_left:after,
+.page2 .talkingBox .man1 .talking_left:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 0.2rem solid transparent;
+  border-right-color: #cbceda;
+  left: -0.4rem;
+  top: 8px;
+  z-index: 1;
+}
+.page2 .talkingBox .man1 .talking_right {
+  position: relative;
+  width: 3rem;
+  border-radius: 0.2rem;
+  top: 0.2rem;
+  text-align: left;
+  background: #cbceda;
+  font-size: 0.24rem;
+  float: right;
+  margin-right: 0.2rem;
+  padding: 0.15rem;
+}
+.page2 .talkingBox .man1 .talking_right p {
+  margin: 0;
+}
+.page2 .talkingBox .man1 .talking_right:after,
+.page2 .talkingBox .man1 .talking_right:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 0.2rem solid transparent;
+  border-left-color: #cbceda;
+  right: -0.4rem;
+  top: 8px;
+  z-index: 1;
+}
+.page2 .talkingBox .woman {
+  height: 1.5rem;
+}
+.page2 .talkingBox .woman .headPic {
+  width: 1rem;
+  height: 1rem;
+  float: right;
+  background: url("../img/page2_headPic.png") 3.8rem 0;
+  background-size: 4.95rem 4.2rem;
+}
+.page2 .talkingBox .woman .talking_left {
+  position: relative;
+  width: 3rem;
+  border-radius: 0.2rem;
+  margin-left: 1.1rem;
+  top: 0.2rem;
+  text-align: left;
+  background: #e9e3e3;
+  font-size: 0.24rem;
+  padding: 0.15rem;
+}
+.page2 .talkingBox .woman .talking_left p {
+  margin: 0;
+}
+.page2 .talkingBox .woman .talking_left:after,
+.page2 .talkingBox .woman .talking_left:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 0.2rem solid transparent;
+  border-right-color: #e9e3e3;
+  left: -0.4rem;
+  top: 8px;
+  z-index: 1;
+}
+.page2 .talkingBox .woman .talking_right {
+  position: relative;
+  width: 3rem;
+  border-radius: 0.2rem;
+  top: 0.2rem;
+  text-align: left;
+  background: #e9e3e3;
+  font-size: 0.24rem;
+  float: right;
+  margin-right: 0.2rem;
+  padding: 0.15rem;
+}
+.page2 .talkingBox .woman .talking_right p {
+  margin: 0;
+}
+.page2 .talkingBox .woman .talking_right:after,
+.page2 .talkingBox .woman .talking_right:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 0.2rem solid transparent;
+  border-left-color: #e9e3e3;
+  right: -0.4rem;
+  top: 8px;
+  z-index: 1;
+}
+.page2 .talkingBox .icon {
+  width: 2.5rem;
+  height: 1.9rem;
+  background: url("../img/page2_headPic.png") 0 -1.1rem;
+  background-size: 4.95rem 4.2rem;
+  float: right;
+}
+.page3 .title {
+  width: 4.7rem;
+  height: 1.5rem;
+  background-color: #ffdc23;
+  margin: 0.3rem auto;
+  padding-top: 0.25rem;
+}
+.page3 .title img {
+  width: 4.2rem;
+  margin: 0 auto;
+}
+.page3 .tempBox {
+  width: 4.1rem;
+  height: 5rem;
+  margin: 0 auto 0.5rem;
+  position: relative;
+}
+.page3 .tempBox .leftWord {
+  width: 55%;
+  float: left;
+}
+.page3 .tempBox .leftWord ul li {
+  margin: 0.2rem auto;
+  text-align: center;
+  display: none;
+}
+.page3 .tempBox .leftWord ul li h3 {
+  font-size: 0.24rem;
+  margin: 0;
+  padding: 0;
+}
+.page3 .tempBox .leftWord ul li p {
+  font-size: 0.24rem;
+  margin: 0;
+  padding: 0;
+}
+.page3 .tempBox .leftWord ul li p span {
+  color: #b9070e;
+  font-weight: bold;
+}
+.page3 .tempBox .rightPic {
+  width: 45%;
+  float: right;
+}
+.page3 .tempBox .rightPic .thermometer {
+  width: 100%;
+  height: 5rem;
+  position: relative;
+  background: url("../img/page3_temp.png") no-repeat;
+  background-size: contain;
+}
+.page3 .tempBox .rightPic .thermometer .hotLine {
+  width: 12.5%;
+  height: 3.3rem;
+  position: absolute;
+  bottom: 0.9rem;
+  left: 50%;
+  margin-left: -13%;
+  overflow: hidden;
+}
+.page3 .tempBox .rightPic .thermometer .hotLine .redColor {
+  background-color: #ff3333;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+}
+.page3 .tempBox .rightPic .thermometer .redBall {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #ff3333;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0.5rem;
+  left: 50%;
+  margin-left: -20%;
+}
+.page3 .tempBox .finish {
+  width: 2.5rem;
+  height: 1.9rem;
+  background: url("../img/page2_headPic.png") -2.3rem -1.2rem;
+  background-size: 4.95rem 4.2rem;
+  position: absolute;
+  right: -1rem;
+  bottom: -1rem;
+  display: none;
+}
+.page4 .title {
+  width: 4.7rem;
+  height: 1.5rem;
+  background-color: #ffdc23;
+  margin: 0.3rem auto 0;
+  padding-top: 0.25rem;
+}
+.page4 .title img {
+  width: 4.2rem;
+  margin: 0 auto;
+}
+.page4 .searchBox {
+  background: url(../img/page4_input.jpg) no-repeat;
+  width: 4.6rem;
+  height: 1.6rem;
+  background-size: contain;
+  margin: 0 auto;
+  position: relative;
+}
+.page4 .searchBox p {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.7rem;
+}
+.page4 .searchBox #baiduSearch {
+  width: 1rem;
+  height: 0.5rem;
+  display: block;
+  position: absolute;
+  top: 0.6rem;
+  right: 0.3rem;
+}
+.page4 .searchBox .hands {
+  position: absolute;
+  width: 0.4rem;
+  right: 0.5rem;
+  top: 1rem;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.page4 .searchResult {
+  width: 4.5rem;
+  height: 5rem;
+  margin: 0 auto;
+}
+.page4 .searchResult .box {
+  height: 50%;
+  width: 85%;
+  margin: 0 auto;
+}
+.page4 .searchResult .box img {
+  width: 100%;
+  display: none;
+}
+.page4 .popBox {
+  display: none;
+  width: 5rem;
+  position: absolute;
+  height: 6.7rem;
+  background: url(../img/page4_popBox.jpg) no-repeat;
+  background-size: contain;
+  top: 1.7rem;
+  left: 50%;
+  margin-left: -2.5rem;
+}
+.page4 .popBox .rightTopIcon {
+  background: url(../img/icon_sprite.png) no-repeat 0 0;
+  background-size: 4rem 40rem;
+  width: 2.6rem;
+  height: 2.2rem;
+  position: absolute;
+  top: 1rem;
+  right: 0.5rem;
+}
+.page4 .popBox #nextPage {
+  position: absolute;
+  top: 0.4rem;
+  right: 0.2rem;
+  width: 1.1rem;
+  height: 0.5rem;
+}
+.page4 .popBox .hands {
+  position: absolute;
+  width: 0.4rem;
+  right: 0.5rem;
+  top: 0.7rem;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.page5 {
+  background: url("../img/page5_bac.jpg") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+.page5 .remberIcon {
+  background: url("../img/icon_sprite.png") no-repeat 0 -2.6rem;
+  background-size: 4rem 40rem;
+  width: 3.5rem;
+  height: 2rem;
+  position: absolute;
+  top: 40%;
+  right: 0.5rem;
+}
+.page5 .hands {
+  position: absolute;
+  width: 0.4rem;
+  right: 25%;
+  top: 80%;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.page6 {
+  background: url("../img/page7_bac.gif") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+.page6 .hands {
+  position: absolute;
+  width: 0.4rem;
+  right: 45%;
+  top: 95%;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.page7 {
+  background: url("../img/page8_bac.jpg") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+.page7 .mateIcon {
+  background: url("../img/icon_sprite.png") no-repeat 0 -4.6rem;
+  background-size: 4rem 40rem;
+  width: 2.4rem;
+  height: 1.9rem;
+  position: absolute;
+  top: 40%;
+  right: 0.5rem;
+}
+.page7 .hands {
+  position: absolute;
+  width: 0.4rem;
+  right: 45%;
+  top: 85%;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.page8 {
+  background: url("../img/page9_bac.jpg") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+.page8 .findPassIcon {
+  background: url("../img/icon_sprite.png") no-repeat 0 -6.9rem;
+  background-size: 4rem 40rem;
+  width: 3.3rem;
+  height: 2.6rem;
+  position: absolute;
+  top: 40%;
+  right: 0.5rem;
+}
+.page8 .hands {
+  position: absolute;
+  width: 0.4rem;
+  right: 45%;
+  top: 85%;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.page16,
+.page12,
+.page14,
+.page9 {
+  position: relative;
+}
+.page16 .title,
+.page12 .title,
+.page14 .title,
+.page9 .title {
+  width: 85%;
+  margin: 0.3rem auto;
+}
+.page16 .tempBox,
+.page12 .tempBox,
+.page14 .tempBox,
+.page9 .tempBox {
+  background: url("../img/page10_temp.png") no-repeat;
+  background-size: contain;
+  width: 1.5rem;
+  height: 5rem;
+  margin: 0.5rem auto 1rem;
+  position: relative;
+}
+.page16 .tempBox .number,
+.page12 .tempBox .number,
+.page14 .tempBox .number,
+.page9 .tempBox .number {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  color: red;
+}
+.page16 .tempBox .hotLine,
+.page12 .tempBox .hotLine,
+.page14 .tempBox .hotLine,
+.page9 .tempBox .hotLine {
+  position: absolute;
+  width: 0.19rem;
+  height: 3rem;
+  top: 0.8rem;
+  left: 50%;
+  margin-left: -0.1rem;
+  overflow: hidden;
+}
+.page16 .tempBox .hotLine .color,
+.page12 .tempBox .hotLine .color,
+.page14 .tempBox .hotLine .color,
+.page9 .tempBox .hotLine .color {
+  background-color: #ffd933;
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  position: absolute;
+}
+.page16 .seventyPerIcon,
+.page12 .seventyPerIcon,
+.page14 .seventyPerIcon,
+.page9 .seventyPerIcon {
+  background: url("../img/icon_sprite.png") no-repeat 0 -14.5rem;
+  background-size: 4rem 40rem;
+  width: 3.7rem;
+  height: 2.2rem;
+  position: absolute;
+  top: 45%;
+  right: 0.5rem;
+}
+.page16 .tenPerIcon,
+.page12 .tenPerIcon,
+.page14 .tenPerIcon,
+.page9 .tenPerIcon {
+  background: url("../img/icon_sprite.png") no-repeat 0 -17rem;
+  background-size: 4rem 40rem;
+  width: 3.7rem;
+  height: 2.3rem;
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+}
+.page10 {
+  background: url("../img/page11_bac.jpg") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+.page10 .startClassIcon {
+  background: url("../img/icon_sprite.png") no-repeat 0 -9.9rem;
+  background-size: 4rem 40rem;
+  width: 3.5rem;
+  height: 2.1rem;
+  position: absolute;
+  top: 60%;
+  right: 0.5rem;
+}
+.page10 .hands {
+  position: absolute;
+  width: 0.4rem;
+  right: 67%;
+  top: 56%;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.page10 #page10Btn {
+  width: 1.6rem;
+  height: 1.4rem;
+  display: block;
+  position: absolute;
+  top: 54%;
+  left: 12%;
+}
+.page11 {
+  background: url("../img/page12_bac.jpg") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+.page11 .hands {
+  position: absolute;
+  width: 0.4rem;
+  right: 30%;
+  top: 80%;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.page11 .allRoadIcon {
+  background: url("../img/icon_sprite.png") no-repeat 0 -12.3rem;
+  background-size: 4rem 40rem;
+  width: 2.2rem;
+  height: 1.9rem;
+  position: absolute;
+  top: 60%;
+  right: 0.5rem;
+}
+.page13 {
+  background: url("../img/page14_bac.jpg") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+.page13 .timeIcon {
+  background: url("../img/icon_sprite.png") no-repeat 0 -19.9rem;
+  background-size: 4rem 40rem;
+  width: 2.9rem;
+  height: 2.4rem;
+  position: absolute;
+  top: 60%;
+  right: 0.5rem;
+}
+.page13 .hands {
+  position: absolute;
+  width: 0.4rem;
+  right: 30%;
+  top: 94%;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.page15 {
+  background: url("../img/page15_bac.jpg") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+.page15 .thisIcon {
+  background: url("../img/icon_sprite.png") no-repeat 0 -22.5rem;
+  background-size: 4rem 40rem;
+  width: 2.5rem;
+  height: 2.2rem;
+  position: absolute;
+  top: 20%;
+  left: 0.5rem;
+}
+.page15 .hands {
+  position: absolute;
+  width: 0.4rem;
+  right: 35%;
+  top: 80%;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.page17 {
+  background: url("../img/page18_bac.jpg") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+.page17 .thisIcon {
+  background: url("../img/icon_sprite.png") no-repeat 0 -25rem;
+  background-size: 4rem 40rem;
+  width: 3.6rem;
+  height: 2.3rem;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  margin-left: -1.8rem;
+}
+.insideBox {
+  width: 5.7rem;
+  margin: 0.3rem auto 0.2rem;
+  border: 0.02rem solid #555555;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  font-size: 0.24rem;
+}
+.nextBtn {
+  width: 5rem;
+  height: 1rem;
+  display: block;
+  background: url("../img/page2_headPic.png") no-repeat 0 -3.2rem;
+  margin: 0 auto;
+  background-size: 4.95rem 4.2rem;
+}
+.cartoon0_3 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.cartoon0_5 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+.cartoon0_6 {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+.cartoon0_8 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+.cartoon1_0 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.cartoon1_2 {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+.cartoon1_4 {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+.cartoon1_8 {
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+.cartoon2_0 {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.cartoon2_8 {
+  -webkit-animation-delay: 2.8s;
+          animation-delay: 2.8s;
+}
+.inifty {
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.IconNo {
+  display: none;
+}
